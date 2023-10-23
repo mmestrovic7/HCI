@@ -1,7 +1,7 @@
 # [Class Project Title]
 **ChatGPT prompts for creating sitemap:**\
 \
-**Prompt 1**: Propose a set of 15 topics related to Harry Styles and his "Love On Tour" tour.
+**Prompt 1**:<br /> Propose a set of 15 topics related to Harry Styles and his "Love On Tour" tour.
 \
 **Prompt 2**: Assume the role of persona 1 and categorize and label the proposed topics. Persona 1 represents a category of young people.
 \

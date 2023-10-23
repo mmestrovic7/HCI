@@ -1,4 +1,4 @@
-# [Class Project Title]
+# Class-project-2
 **ChatGPT prompts for creating sitemap:**
 <br /><br />
 **Prompt 1**:<br /> Propose a set of 15 topics related to Harry Styles and his "Love On Tour" tour.

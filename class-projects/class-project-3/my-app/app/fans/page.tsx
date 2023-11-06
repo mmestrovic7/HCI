@@ -4,14 +4,14 @@ import '../globals.css'
 function Home() {
   return (
     <main className="flex flex-col items-center justify-center p-14">
-      <h1 className='p-14'>ABOUT HARRY STYLES</h1>
+      <h1 className='p-14'>FAN ACTIVITIES</h1>
       <nav className='content-box p-14'>
         <ul className='flex flex-col justify-center items-center text-2xl gap-8'>
           <li>
-            <Link href="about-hs/1d">1D</Link>
+            <Link href="fans/experiences">EXPERIENCES</Link>
           </li>
           <li>
-            <Link href="about-hs/solo">SOLO</Link>
+          <Link href="fans/projects">PROJECTS</Link>
           </li>
         </ul>
       </nav>

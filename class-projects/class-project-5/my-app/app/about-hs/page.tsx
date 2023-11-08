@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import '../globals.css'
+
 function Home() {
   return (
     <main className="flex flex-col items-center justify-center p-14">

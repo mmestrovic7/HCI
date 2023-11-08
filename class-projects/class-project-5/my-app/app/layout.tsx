@@ -2,6 +2,13 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+const pages = {
+  home: "/",
+  bts: "/bts",
+  fans: "/fans",
+  lot: "/lot",
+  style:"/style"
+};
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,24 +27,15 @@ export default function RootLayout({
       <body className={inter.className}>
       <nav className='flex justify-center p-14'>
         <ul className='flex text-lg gap-8'>
-          <li>
-            <Link href="/">HOME</Link>
-          </li>
+        {Object.entries(pages).map(([name, path]) => (
+              <li key={name}>
+                <Link href={path}>{name.toUpperCase()}</Link>
+              </li>
+            ))}
           <li>
             <Link href="/about-hs">ABOUT HS</Link>
-          </li>
-          <li>
-            <Link href="/lot">LOT</Link>
-          </li>
-          <li>
-            <Link href="/style">STYLE</Link>
-          </li>
-          <li>
-            <Link href="/bts">BTS</Link>
-          </li>
-          <li>
-            <Link href="/fans">FANS</Link>
-          </li>
+            </li>
+        
         </ul>
       </nav>
         {children}</body>

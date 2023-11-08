@@ -1,4 +1,5 @@
 import { Post } from "../page";
+import Link from  "next/link";
 
 interface Params {
   postId: string;
@@ -16,10 +17,14 @@ export default async function BlogPost({ params }: { params: Params }) {
 
   return (
     <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
+      
+      
       <h1 className="text-3xl font-bold p-10 capitalize">
         <span className="text-neutral-400">Experience {post.id}:</span> {post.title}
       </h1>
+      
       <p className="text-xl p-10">{post.body}</p>
+      <h2 className="text-2xl p-10"><Link href="/fans/experiences">GO BACK</Link></h2>
     </main>
   );
 }

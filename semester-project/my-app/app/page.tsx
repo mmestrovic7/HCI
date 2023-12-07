@@ -24,7 +24,7 @@ function Home() {
           </div>
         </div>
         <button type="button" className="aboutHSButton">
-          ABOUT HS
+        <Link href="/about-hs">ABOUT HS</Link>
         </button>
       </div>
     </main>

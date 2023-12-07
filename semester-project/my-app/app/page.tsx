@@ -24,8 +24,51 @@ function Home() {
           </div>
         </div>
         <button type="button" className="aboutHSButton">
-        <Link href="/about-hs">ABOUT HS</Link>
+          <Link href="/about-hs">ABOUT HS</Link>
         </button>
+      </div>
+      <div className="finalHeroSection2">
+        <div className="heroSection2Photos">
+          <div className="slaneCastle">
+            <p className="slaneCastleText">
+              Slane Castle, <br />
+              June 2023
+            </p>
+            <img
+              src="Rectangle 14.svg"
+              alt="image21"
+              height={363}
+              width={244}
+            />
+          </div>
+
+          <div className="regioEmilia">
+            <p className="regioEmiliaText">
+              Regio Emilia, <br />
+              July 2023
+            </p>
+            <img
+              src="Rectangle 13.svg"
+              alt="image22"
+              height={363}
+              width={244}
+            />
+          </div>
+
+          <div className="newYork">
+            <p className="newYorkText">
+              New York City, <br />
+              XV. September, 2023
+            </p>
+            <img
+              src="Rectangle 15.svg"
+              alt="image23"
+              height={363}
+              width={244}
+            />
+          </div>
+        </div>
+        <button type="button" className="tourGalleryButton">TOUR GALLERY</button>
       </div>
     </main>
   );

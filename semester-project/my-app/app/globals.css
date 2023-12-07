@@ -12,6 +12,8 @@
   --navbar-component-default: #ffb6c9;
   --button-default: #859dd0;
   --button-hover: #00485c;
+  --darker-background: #ddc9ac;
+  --photo-text-background: #f5e3ce;
 }
 
 body {
@@ -144,10 +146,10 @@ body {
 .finalHeroSection {
   display: grid;
 }
-.aboutHSButton {
+.tourGalleryButton{
   background-color: var(--button-default);
   padding: 10px 25px;
-  margin-top: 30px;
+  margin-bottom: 60px;
   border-radius: 15px 15px 15px 15px;
   color: var(--navbar-text);
   text-align: center;
@@ -159,8 +161,26 @@ body {
   width: 200px;
   justify-self: center;
 }
-
+.aboutHSButton {
+  background-color: var(--button-default);
+  padding: 10px 25px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 15px 15px 15px 15px;
+  color: var(--navbar-text);
+  text-align: center;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 200px;
+  justify-self: center;
+}
 .aboutHSButton:hover {
+  background-color: var(--button-hover);
+}
+.tourGalleryButton:hover {
   background-color: var(--button-hover);
 }
 .lotElements {
@@ -244,6 +264,40 @@ body {
   font-weight: 600;
   line-height: normal;
 }
+.finalHeroSection2 {
+  background-color: var(--darker-background);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+  height: 800px;
+  flex-shrink: 0;
+}
+.heroSection2Photos {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-evenly;
+  padding: 60px 0px 0px 0px;
+  gap: 30px;
+}
+
+.regioEmilia,
+.newYork,
+.slaneCastle {
+  background-color: var(--photo-text-background);
+  border-radius: 10px;
+  width: auto;
+}
+.regioEmiliaText,
+.newYorkText,
+.slaneCastleText {
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 20px 0px 20px 0px;
+}
+
 @media only screen and (max-width: 1000px) {
   .navbar {
     flex-direction: column;
@@ -270,17 +324,29 @@ body {
     padding: 20px;
     margin-right: 0;
     position: relative;
-    
   }
-  .homePagePhotos{
-    display:flex;
+  .homePagePhotos {
+    display: flex;
     justify-content: space-between;
+    align-self: center;
   }
-
-  .heroSection {
+  .finalHeroSection2 {
+    width: 140%;
+  }
+  .heroSection2Photos {
     display: flex;
     flex-direction: column;
   }
+  .regioEmilia,
+  .newYork {
+    display: none;
+  }
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .tourGalleryButton,
   .aboutHSButton {
     position: relative;
     bottom: 5%;

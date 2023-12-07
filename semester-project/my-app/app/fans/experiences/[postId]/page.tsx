@@ -20,11 +20,11 @@ export default async function BlogPost({ params }: { params: Params }) {
       
       
       <h1 className="text-3xl font-bold p-10 capitalize">
-        <span className="text-neutral-400">Experience {post.id}:</span> {post.title}
+        <span className="experience">Experience {post.id}:</span> {post.title}
       </h1>
       
-      <p className="text-xl p-10">{post.body}</p>
-      <h2 className="text-2xl p-10"><Link href="/fans/experiences">GO BACK</Link></h2>
+      <p className="posts-body">{post.body}</p>
+      <h2 className="goBack"><Link href="/fans/experiences">GO BACK</Link></h2>
     </main>
   );
 }

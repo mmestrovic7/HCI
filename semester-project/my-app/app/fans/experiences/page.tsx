@@ -51,7 +51,7 @@ export default async function Blog({
 
   return (
     <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
-      <h1 className="text-3xl font-bold p-10">FAN EXPERIENCES</h1>
+      <h1 className="experiences2">FAN EXPERIENCES</h1>
 
       {_limit && _page && (
         <div className="flex items-baseline gap-8 pb-10">

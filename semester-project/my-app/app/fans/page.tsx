@@ -9,9 +9,9 @@ const pages={
 function Home() {
   return (
     <main className="flex flex-col items-center justify-center p-14">
-      <h1 className='p-14'>FAN ACTIVITIES</h1>
+      <h1 className='activities'>FAN ACTIVITIES</h1>
       <nav className='content-box p-14'>
-        <ul className='flex flex-col justify-center items-center text-2xl gap-8'>
+        <ul className='fansElements'>
          {Object.entries(pages).map(([name,path])=>(
            <li key={name}>
            <Link href={path}>{name.toUpperCase()}</Link>

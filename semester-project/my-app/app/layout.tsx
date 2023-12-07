@@ -2,6 +2,10 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+import { FC, useState } from "react";
+import Image from "next/image";
+
+
 const pages = {
   home: "/",
   bts: "/bts",
@@ -26,9 +30,15 @@ export default function RootLayout({
     <html lang="en">
     
       <body className={inter.className}>  
-     
-      <nav >
-        <ul className="navbar">
+      <nav className='navbar'>
+      <Image
+          className="nav-logo"
+          src="/hslogo.svg"
+          width={93}
+          height={65}
+          alt="Navbar logo"
+        />
+        <ul className="navbar-elements">
         {Object.entries(pages).map(([name, path]) => (
               <li key={name}>
                 <Link href={path}>{name.toUpperCase()}</Link>

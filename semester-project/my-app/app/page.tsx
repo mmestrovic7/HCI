@@ -68,7 +68,25 @@ function Home() {
             />
           </div>
         </div>
-        <button type="button" className="tourGalleryButton">TOUR GALLERY</button>
+        <button type="button" className="tourGalleryButton">
+          <Link href="/lot/gallery">TOUR GALLERY</Link>
+        </button>
+      </div>
+      <div className="finalHeroSection3">
+        <h1 className="fanExperiencesTitle">FAN EXPERIENCES</h1>
+        <div className="heroSection3">
+          <p className="fanExperiencesText">
+            Have you been to a Harry concert? Or do you want to hear impressions
+            and learn more about fan projects? Connect with fans and feel a
+            piece of the atmosphere from many “Love on Tour” shows.
+          </p>
+          <div className="fanExperiencePhoto">
+            <img src="harryHouse.svg" alt="house" height={154} width={336} />
+          </div>
+        </div>
+        <button type="button" className="fanExperiencesButton">
+          <Link href="/fans">START CONNECTING</Link>
+        </button>
       </div>
     </main>
   );

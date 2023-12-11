@@ -15,74 +15,27 @@
   --darker-background: #ddc9ac;
   --photo-text-background: #f5e3ce;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 10px 10px 10px;
-}
-.navbar-elements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  /* padding-top: 65px; */
-  padding-right: 20px;
-}
-
-.navbar-elements li {
-  background-color: var(--navbar-component-default);
-  padding: 10px 25px;
-  border-radius: 15px 15px 15px 15px;
-  flex-shrink: 0;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.navbar-elements li:hover {
-  background-color: #fbb238;
-}
-
-.nav-logo {
-  width: 226px;
-  height: 92.455px;
-  flex-shrink: 0;
-  justify-content: flex-start;
-  padding: 20px 25px 10px 10px;
-}
-
-.bts,
-.band,
-.guests,
-.experience,
-.experiences2,
-.projects,
-.activities,
-.gallery,
-.highlights,
-.sasdesig,
-.goBack,
-.lot,
-.sstyle,
-.merch,
-.aboutHS,
-.sasdesign {
-  padding: 14px;
+h1 {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  padding: 14px;
 }
+
+
 
 .homePageFullText {
   width: 650px;
@@ -269,8 +222,9 @@ body {
 }
 .finalHeroSection2 {
   background-color: var(--darker-background);
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   width: 110%;
   height: 800px;
@@ -280,7 +234,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-items: space-evenly;
-  padding: 60px 0px 0px 0px;
   gap: 30px;
 }
 
@@ -315,7 +268,7 @@ body {
   padding: 60px 0px 60px 0px;
 }
 .fanExperiencesTitle {
-  padding: 10px 14px 10px 10px;
+  position:center;
   font-family: "Dela Gothic One", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -336,7 +289,7 @@ body {
   align-self: center;
 }
 
-.fanExperiencePhoto{
+.fanExperiencePhoto {
   padding-left: 20px;
 }
 @media only screen and (max-width: 1000px) {

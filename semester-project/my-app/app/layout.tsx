@@ -4,6 +4,7 @@ import './globals.css'
 import Link from 'next/link'
 import { FC, useState } from "react";
 import Image from "next/image";
+import Navbar from "./components/Navbar/NavBar";
 
 
 const pages = {
@@ -30,26 +31,7 @@ export default function RootLayout({
     <html lang="en">
     
       <body className={inter.className}>  
-      <nav className='navbar'>
-      <Image
-          className="nav-logo"
-          src="/hslogo.svg"
-          width={93}
-          height={65}
-          alt="Navbar logo"
-        />
-        <ul className="navbar-elements">
-        {Object.entries(pages).map(([name, path]) => (
-              <li key={name}>
-                <Link href={path}>{name.toUpperCase()}</Link>
-              </li>
-            ))}
-          <li>
-            <Link href="/about-hs">ABOUT HS</Link>
-            </li>
-        
-        </ul>
-      </nav>
+      <Navbar/>
         {children}</body>
     </html>
   )

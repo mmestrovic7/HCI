@@ -28,6 +28,7 @@ function Home() {
         </button>
       </div>
       <div className="finalHeroSection2">
+        <h1 className="fanExperiencesTitle">LOVE ON TOUR</h1>
         <div className="heroSection2Photos">
           <div className="slaneCastle">
             <p className="slaneCastleText">

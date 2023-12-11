@@ -8,8 +8,8 @@ const pages={
 }
 function Home() {
   return (
-    <main className="flex flex-col items-center justify-center p-14">
-      <h1 className='lot'>LOVE ON TOUR</h1>
+    <main>
+      <h1>LOVE ON TOUR</h1>
       <div className='content-box'>
         <ul className='lotElements'>
         {Object.entries(pages).map(([name, path]) => (

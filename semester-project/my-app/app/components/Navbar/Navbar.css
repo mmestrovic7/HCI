@@ -16,6 +16,8 @@
     position:fixed;
     width:100%;
     background-color:var(--background);
+    z-index: 1;
+    margin-bottom: 500px;
   }
   .navbar-elements {
     display: flex;

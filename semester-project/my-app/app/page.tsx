@@ -17,8 +17,12 @@ function Home() {
             </p>
           </div>
           <div className="homePagePhotos">
-            <img src="harryHERO.svg" alt="image1" height={160} width={160} />
-       
+            <img
+              src="harryHERO.svg"
+              alt="image1"
+              width={554}
+              height={911.413}
+            />
           </div>
         </div>
         <button type="button" className="aboutHSButton">

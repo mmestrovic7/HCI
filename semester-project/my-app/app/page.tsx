@@ -17,10 +17,8 @@ function Home() {
             </p>
           </div>
           <div className="homePagePhotos">
-            <img src="harry1.svg" alt="image1" height={160} width={160} />
-            <img src="harry2.svg" alt="image1" height={160} width={160} />
-            <img src="harry3.svg" alt="image1" height={160} width={160} />
-            <img src="harry4.svg" alt="image1" height={160} width={160} />
+            <img src="harryHERO.svg" alt="image1" height={160} width={160} />
+       
           </div>
         </div>
         <button type="button" className="aboutHSButton">

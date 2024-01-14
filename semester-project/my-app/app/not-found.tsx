@@ -3,11 +3,13 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="flex flex-col items-center justify-center p-14">
-<div>
-    <h1>HUUUH</h1>
-</div>
-  
-  </main>
+    <main>
+      <div className="flex flex-col items-center justify-center p-14">
+      <h1>your url is probably incorrect luv</h1>   
+        <img src="loading_harry.svg" 
+        height={450}
+        width={392}/>           
+      </div>   
+    </main>
   );
 }

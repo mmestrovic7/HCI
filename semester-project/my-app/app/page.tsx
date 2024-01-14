@@ -72,7 +72,7 @@ function Home() {
           </div>
         </div>
         <button type="button" className="tourGalleryButton">
-          <Link href="/lot/gallery">TOUR GALLERY</Link>
+          <Link href="/lot">TOUR GALLERY</Link>
         </button>
       </div>
       <div className="finalHeroSection3">

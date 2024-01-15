@@ -1,0 +1,17 @@
+.customButton{
+  background-color: var(--button-default);
+  padding: 10px 25px;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  color: var(--navbar-text);
+  text-align: center;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  width: auto;
+  justify-self: center;
+}
+
+.customButton:hover {
+  background-color: var(--button-hover);
+}

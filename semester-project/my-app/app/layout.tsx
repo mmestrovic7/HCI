@@ -5,7 +5,7 @@ import './globals.css'
 import Link from 'next/link'
 import { FC, useState } from "react";
 import Image from "next/image";
-import Navbar from "./components/Navbar/NavBar";
+import Navbar from "./components/Navbar/Navbar/NavBar";
 
 
 const pages = {

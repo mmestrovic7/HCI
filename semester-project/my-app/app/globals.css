@@ -12,13 +12,14 @@
   --darker-background: #ddc9ac;
   --photo-text-background: #f5e3ce;
 }
-main {
+main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 14px;
+  padding: 35px;
 }
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
@@ -26,13 +27,26 @@ body {
 h1 {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 19px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   padding: 14px;
   margin-top: 100px; 
 }
+h2{
+  position:center;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+p{
+  text-align: justify;
+  padding: 10px 14px 10px 10px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
 
+}
 
 
 .homePageFullText {
@@ -44,31 +58,12 @@ h1 {
 
 .h1homePage {
   padding: 10px 14px 10px 10px;
-  font-family: "Dela Gothic One", sans-serif;
   font-size: 40px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
 }
 
 .h2homePage {
   padding: 10px 14px 10px 10px;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.homePageText {
-  text-align: justify;
-  padding: 10px 14px 10px 10px;
-  font-family: "Didact Gothic", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 50;
-  line-height: normal;
-  line-height: 1.3;
 }
 
 .posts-body {
@@ -88,76 +83,18 @@ h1 {
   padding: 50px 55px 50px 55px;
   width: 440px;
   height: 440px;
-  /* flex-shrink: 0; */
+ 
 }
 
 .heroSection {
   display: inline-flex;
+  margin-bottom: 30px;
 }
 .finalHeroSection {
   display: grid;
-}
-.tourGalleryButton,
-.fanExperiencesButton {
-  background-color: var(--button-default);
-  padding: 10px 25px;
-  margin-bottom: 60px;
-  border-radius: 15px 15px 15px 15px;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  width: auto;
-  justify-self: center;
-}
-.aboutHSButton {
-  background-color: var(--button-default);
-  padding: 10px 25px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  border-radius: 15px 15px 15px 15px;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  width: auto;
-  justify-self: center;
-}
-.fanExperiencesButton:hover,
-.tourGalleryButton:hover,
-.aboutHSButton:hover {
-  background-color: var(--button-hover);
-}
-/* .tourGalleryButton:hover {
-  background-color: var(--button-hover);
-} */
-.lotElements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  /* padding-top: 65px; */
-  padding-right: 20px;
-}
-.lotElements li {
-  background-color: var(--button-default);
-  padding: 10px 25px;
-  border-radius: 15px 15px 15px 15px;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.aboutHSElements {
+} 
+
+.subpageElements {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -166,7 +103,7 @@ h1 {
   padding-right: 20px;
 }
 
-.aboutHSElements li {
+.subpageElements li {
   background-color: var(--button-default);
   padding: 10px 25px;
   border-radius: 15px 15px 15px 15px;
@@ -178,46 +115,7 @@ h1 {
   font-weight: 600;
   line-height: normal;
 }
-.fansElements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  /* padding-top: 65px; */
-  padding-right: 20px;
-}
-.fansElements li {
-  background-color: var(--button-default);
-  padding: 10px 25px;
-  border-radius: 15px 15px 15px 15px;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.btsElements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  /* padding-top: 65px; */
-  padding-right: 20px;
-}
-.btsElements li {
-  background-color: var(--button-default);
-  padding: 10px 25px;
-  border-radius: 15px 15px 15px 15px;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+
 .finalHeroSection2 {
   background-color: var(--darker-background);
   display: flex;
@@ -235,22 +133,6 @@ h1 {
   gap: 30px;
 }
 
-.regioEmilia,
-.newYork,
-.slaneCastle {
-  background-color: var(--photo-text-background);
-  border-radius: 10px;
-  width: auto;
-}
-.regioEmiliaText,
-.newYorkText,
-.slaneCastleText {
-  font-family: "Dela Gothic One", sans-serif;
-  text-align: center;
-  font-weight: 300;
-  font-size: 15px;
-  padding: 20px 0px 20px 0px;
-}
 
 .finalHeroSection3 {
   display: flex;
@@ -265,24 +147,9 @@ h1 {
   justify-content: center;
   padding: 60px 0px 60px 0px;
 }
-.fanExperiencesTitle {
-  position:center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
 
 .fanExperiencesText {
-  text-align: justify;
-  padding: 10px 10px 10px 10px;
-  font-family: "Didact Gothic", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 50;
-  line-height: normal;
-  line-height: 1.3;
+
   width: 30%;
   align-self: center;
 }
@@ -342,8 +209,7 @@ h1 {
     display: flex;
     flex-direction: column;
   }
-  .regioEmilia,
-  .newYork {
+ .hideOnPhone{
     display: none;
   }
   .heroSection {
@@ -351,11 +217,7 @@ h1 {
     flex-direction: column;
     justify-items: center;
   }
-  .tourGalleryButton,
-  .aboutHSButton {
-    position: relative;
-    bottom: 5%;
-  }
+
  .heroSection3{
   display:flex;
   flex-direction: column;

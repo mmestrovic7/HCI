@@ -1,0 +1,12 @@
+.photoFrame {
+    background-color: var(--photo-text-background);
+    border-radius: 10px;
+    width: auto;
+  }
+  .photoText{
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 20px 0px 20px 0px;
+  }

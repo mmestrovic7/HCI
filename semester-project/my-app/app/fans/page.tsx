@@ -10,7 +10,7 @@ function Home() {
     <main>
       <h1>FAN ACTIVITIES</h1>
       <nav className='content-box p-14'>
-        <ul className='fansElements'>
+        <ul className='subpageElements'>
          {Object.entries(pages).map(([name,path])=>(
            <li key={name}>
            <Link href={path}>{name.toUpperCase()}</Link>

@@ -56,3 +56,11 @@
   .navbar-elements li.active{
     background-color: var(--navbar-component-active);
   }
+  @media only screen and (max-width: 1000px){
+    .navbar-elements li:hover{
+      background-color: var(--navbar-component-default);
+    }
+    .navbar-elements li.active:hover {
+      background-color: var(--navbar-component-active);
+    }
+  }

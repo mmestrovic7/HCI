@@ -7,7 +7,7 @@ function Home() {
     <main>
       <h1>ABOUT HARRY STYLES</h1>
       <nav className='content-box p-14'>
-        <ul className='aboutHSElements'>
+        <ul className='subpageElements'>
           <li>
             <Link href="about-hs/1d">1D</Link>
           </li>

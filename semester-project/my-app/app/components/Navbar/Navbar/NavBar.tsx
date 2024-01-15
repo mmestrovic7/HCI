@@ -19,11 +19,12 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
   return (
     <nav className="navbar">
+
       <Image
         className="nav-logo"
-        src="/hslogo.svg"
-        width={93}
-        height={65}
+        src="/hslogo2 1.svg"
+        width={373}
+        height={51}
         alt="Navbar logo"
       />
       <ul className="navbar-elements">

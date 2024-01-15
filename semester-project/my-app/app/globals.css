@@ -18,6 +18,7 @@ main{
   align-items: center;
   justify-content: center;
   padding: 35px;
+  overflow:hidden;
 }
 
 body {

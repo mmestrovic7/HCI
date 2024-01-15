@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import React, { FC, useState } from "react";
+import Image from "next/image";
 import "./Hamburger.css"; // Import your CSS module
 
 interface HamburgerProps {
@@ -14,7 +15,10 @@ const Hamburger: FC<HamburgerProps> = ({ pages }) => {
   };
 
   return (
-    <div className={`hamburger-container ${isHamburgerOpen ? "open" : ""}`} onClick={handleHamburgerClick}>
+    <div
+      className={`hamburger-container ${isHamburgerOpen ? "open" : ""}`}
+      onClick={handleHamburgerClick}
+    >
       <div className="bar" />
       <div className="bar" />
       <div className="bar" />
@@ -26,8 +30,8 @@ const Hamburger: FC<HamburgerProps> = ({ pages }) => {
             </div>
           ))}
           <div className="hamburger-item">
-              <a href="/about-hs">ABOUT HARRY</a>
-            </div>
+            <a href="/about-hs">ABOUT HARRY</a>
+          </div>
         </div>
       )}
     </div>

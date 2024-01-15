@@ -1,3 +1,4 @@
+
 .customButton{
   background-color: var(--button-default);
   padding: 10px 25px;
@@ -11,7 +12,9 @@
   width: auto;
   justify-self: center;
 }
-
+.customButton .pink{
+  background-color: var(--);
+}
 .customButton:hover {
   background-color: var(--button-hover);
 }

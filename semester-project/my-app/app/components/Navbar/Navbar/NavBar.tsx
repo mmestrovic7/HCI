@@ -19,18 +19,18 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="showOnPhone">
-        <Hamburger pages={pages} />
-      </div>
-
-      <Image
+    <nav className="navbar">   
+       <Image
         className="nav-logo"
         src="/hslogo2 1.svg"
         width={373}
         height={51}
         alt="Navbar logo"
       />
+      <div className="showOnPhone">
+        <Hamburger pages={pages} />
+      </div>
+
       <ul className="navbar-elements hideOnPhone">
         {Object.entries(pages).map(([name, path]) => (
           <li key={name} className={selectedNavItem === name ? "active" : ""}>

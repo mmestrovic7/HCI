@@ -1,23 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
-const pages={
-  experiences:"/fans/experiences",
-  projects:"/fans/projects",
- 
-}
+import CustomButton from '../components/CustomButton/CustomButton';
 function Home() {
   return (
     <main>
       <h1>FAN ACTIVITIES</h1>
-      <nav className='content-box p-14'>
         <ul className='subpageElements'>
-         {Object.entries(pages).map(([name,path])=>(
-           <li key={name}>
-           <Link href={path}>{name.toUpperCase()}</Link>
-         </li>       
-         ))}
+        <CustomButton text="EXPERIENCES" href="/fans/experiences" />
+      <CustomButton text="PROJECTS" href="/fans/projects" />
         </ul>
-      </nav>
+
     </main>
   )
 }

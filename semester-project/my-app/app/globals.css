@@ -39,6 +39,7 @@ h2{
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  
 }
 p{
   text-align: justify;
@@ -60,18 +61,6 @@ p{
   padding-right: 20px;
 }
 
-.subpageElements li {
-  background-color: var(--button-default);
-  padding: 10px 25px;
-  border-radius: 15px 15px 15px 15px;
-  color: var(--navbar-text);
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
 /*first section*/
 .homePageFullText {
   width: 650px;
@@ -170,12 +159,13 @@ p{
   }
   .showOnPhone{
     display: block;
+
   }
   .photosToHide{
     display: none;
   }
   .h1homePage{
-    margin-top:0px; 
+    padding-top: 5px;
   }
   .homePageFullText {
     width: 100%;

@@ -3,14 +3,15 @@ import React, { FC, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import  "./Navbar.css"; // Import your CSS module
+import "./Navbar.css"; // Import your CSS module
+import Hamburger from "../../Hamburger/Hamburger";
 
 interface NavbarProps {
   pages: { [key: string]: string };
 }
 
 const Navbar: FC<NavbarProps> = ({ pages }) => {
-  const [selectedNavItem, setSelectedNavItem] = useState<string|"/">("home");
+  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">("home");
   const pathname = usePathname();
 
   const handleItemClick = (name: string) => {
@@ -19,6 +20,9 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
   return (
     <nav className="navbar">
+      <div className="showOnPhone">
+        <Hamburger pages={pages} />
+      </div>
 
       <Image
         className="nav-logo"
@@ -27,7 +31,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
         height={51}
         alt="Navbar logo"
       />
-      <ul className="navbar-elements">
+      <ul className="navbar-elements hideOnPhone">
         {Object.entries(pages).map(([name, path]) => (
           <li key={name} className={selectedNavItem === name ? "active" : ""}>
             <Link href={path} onClick={() => handleItemClick(name)}>

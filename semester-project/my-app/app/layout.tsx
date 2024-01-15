@@ -28,12 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="hideOnPhone">
           <Navbar pages={pages} />
-        </div>
-        <div className="showOnPhone">
-          <Hamburger pages={pages} />
-        </div>
         {children}
       </body>
     </html>

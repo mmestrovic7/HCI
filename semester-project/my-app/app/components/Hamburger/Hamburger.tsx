@@ -26,11 +26,11 @@ const Hamburger: FC<HamburgerProps> = ({ pages }) => {
         <div className="additional-content">
           {Object.entries(pages).map(([name, path]) => (
             <div key={name} className="hamburger-item">
-              <a href={path}>{name.toUpperCase()}</a>
+              <a href={path}><h2>{name.toUpperCase()}</h2></a>
             </div>
           ))}
           <div className="hamburger-item">
-            <a href="/about-hs">ABOUT HARRY</a>
+            <a href="/about-hs"><h2>ABOUT HARRY</h2></a>
           </div>
         </div>
       )}

@@ -12,7 +12,6 @@ function Home() {
           <CustomButton text="1D" href="/about-hs/1d" />
           <CustomButton text="SOLO" href="/about-hs/solo" />
         </ul>
-        <Footer />
     </main>
   )
 }

@@ -5,7 +5,6 @@ function Home() {
   return (
     <main>
       <h1>FAN PROJECTS</h1>
-      <Footer />
     </main>
   )
 }

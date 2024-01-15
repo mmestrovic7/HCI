@@ -10,7 +10,6 @@ function Home() {
         <CustomButton text="EXPERIENCES" href="/fans/experiences" />
       <CustomButton text="PROJECTS" href="/fans/projects" />
         </ul>
-        <Footer />
     </main>
   )
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 import CustomButton from "./components/CustomButton/CustomButton";
-import Footer from "./components/Footer/Footer";
+
 function Home() {
   return (
     <main>
@@ -67,8 +67,6 @@ function Home() {
         </div>
         <CustomButton text="START CONNECTING" href="/fans" />
       </div>
-
-      <Footer />
     </main>
   );
 }

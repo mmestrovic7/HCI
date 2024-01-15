@@ -6,7 +6,7 @@ import { FC, useState } from "react";
 import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar/NavBar";
 import Hamburger from "./components/Hamburger/Hamburger";
-
+import Footer from "./components/Footer/Footer";
 const pages = {
   home: "/",
   fans: "/fans",
@@ -27,11 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      
       <body className={inter.className}>
           <Navbar pages={pages} />
         {children}
         <div className="tilting-image"></div>
         <div className="tilting-image2"></div>
+        <Footer />
       </body>
     </html>
   );

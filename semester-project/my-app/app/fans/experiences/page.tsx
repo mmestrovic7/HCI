@@ -111,7 +111,6 @@ export default async function Blog({
           </li>
         ))}
       </ul>
-      <Footer />
     </main>
   );
 }

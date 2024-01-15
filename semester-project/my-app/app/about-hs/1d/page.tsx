@@ -6,7 +6,7 @@ function Home() {
     <main>
 
       <h1>ONE DIRECTION</h1>
-   <Footer />
+
     </main>
   )
 }

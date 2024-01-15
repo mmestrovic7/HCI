@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer/Footer";
 import Link from "next/link";
 
 export interface Post {
@@ -110,6 +111,7 @@ export default async function Blog({
           </li>
         ))}
       </ul>
+      <Footer />
     </main>
   );
 }

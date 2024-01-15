@@ -11,6 +11,7 @@
   --button-hover: #243E6F;
   --darker-background: #ddc9ac;
   --photo-text-background: #f5e3ce;
+  --sitemap-link-color: #007a9b
 }
 main{
   display: flex;
@@ -19,11 +20,15 @@ main{
   justify-content: center;
   padding: 35px;
   overflow:hidden;
+  min-height: 100vh;
+  margin: 0;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-family: "Dela Gothic One", sans-serif;

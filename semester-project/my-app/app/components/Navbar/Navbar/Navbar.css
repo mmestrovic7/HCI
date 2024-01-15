@@ -8,7 +8,6 @@
   --navbar-component-active:#de5b84;
   --background:#f5e3ce;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;

@@ -33,7 +33,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
       <ul className="navbar-elements hideOnPhone">
         {Object.entries(pages).map(([name, path]) => (
-          <li key={name} className={selectedNavItem === name ? "active" : ""}>
+          <li className={selectedNavItem === name ? "active" : ""}>
             <Link href={path} onClick={() => handleItemClick(name)}>
               {name.toUpperCase()}
             </Link>

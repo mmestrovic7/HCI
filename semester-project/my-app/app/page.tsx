@@ -18,7 +18,7 @@ function Home() {
               worldwide tour called Love On Tour.
             </p>
           </div>
-          <div className="homePagePhotos">
+          <div className="homePagePhotos ">
             <img
               src="harryHERO.svg"
               alt="image1"

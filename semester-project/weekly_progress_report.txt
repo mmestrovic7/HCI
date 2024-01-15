@@ -14,8 +14,11 @@
 pitanja:
 *ne prikazuju se na svim laptopima točni fontovi za vercel deployment
 *postoje nejasnoće s pravljenjem svg-a
+*katkad sporo učitavanje, postoji li možda problem s dinamičkim rutiranjem?
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
 *ukloniti nepotrebne stavke
 *404 dodati (zbunjeni harry)
 *figma za mobitel
+*dodane dvije komponente (button i photo frame) i uredniji css
+*dodan hamburger

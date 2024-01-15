@@ -151,6 +151,41 @@ p{
 .fanExperiencePhoto {
   padding-left: 20px;
 }
+.tilting-image,
+.tilting-image2 {
+  position: fixed;
+  bottom: -7%;
+  left: 0%;
+  transform: translateX(-50%) scale(0.4);
+  width: 400px;
+  height: 207px;
+  background: url('/redblue.png') center/cover;
+  animation: moveAndTilt 1200s linear infinite;
+}
+
+.tilting-image2 {
+  left: 10%;
+  background: url('/pinkorange.png') center/cover;
+}
+
+@keyframes moveAndTilt {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    transform: translateX(-100%) scale(0.4) rotate(5deg);
+  }
+
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    transform: translateX(200vw) scale(0.4) rotate(-5deg);
+  }
+}
+
+
+
+
+
+
+
+
+
 /*mobile*/
 @media only screen and (max-width: 1000px) {
 

@@ -30,6 +30,8 @@ export default function RootLayout({
       <body className={inter.className}>
           <Navbar pages={pages} />
         {children}
+        <div className="tilting-image"></div>
+        <div className="tilting-image2"></div>
       </body>
     </html>
   );

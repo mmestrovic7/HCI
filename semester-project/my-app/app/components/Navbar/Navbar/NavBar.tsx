@@ -21,14 +21,17 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   };
 
   return (
-    <nav className="navbar">   
-       <Image
-        className="nav-logo"
-        src="/hslogo2 1.svg"
-        width={373}
-        height={51}
-        alt="Navbar logo"
-      />
+    <nav className="navbar">
+      <Link href="/" onClick={() => handleItemClick("home")}>
+        <Image
+          className="nav-logo"
+          src="/hslogo2 1.svg"
+          width={373}
+          height={51}
+          alt="Navbar logo"
+        />
+      </Link>
+
       <div className="showOnPhone">
         <Hamburger pages={pages} />
       </div>
@@ -41,7 +44,10 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
             </Link>
           </li>
         ))}
-        <li key="about-hs" className={selectedNavItem === "about-hs" ? "active" : ""}>
+        <li
+          key="about-hs"
+          className={selectedNavItem === "about-hs" ? "active" : ""}
+        >
           <Link href="/about-hs" onClick={() => handleItemClick("about-hs")}>
             ABOUT HS
           </Link>

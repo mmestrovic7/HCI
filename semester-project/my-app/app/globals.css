@@ -234,10 +234,11 @@ p{
  .fanExperiencePhoto{
   display:none;
  }
- .tilting-image,.tilting-image2{
+ .tilting-image{
   z-index: 2;
  }
  .tilting-image2{
   left: 30%;
+  z-index: 1;
  }
 }

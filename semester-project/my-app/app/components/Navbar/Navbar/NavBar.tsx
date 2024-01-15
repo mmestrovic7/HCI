@@ -10,6 +10,8 @@ interface NavbarProps {
   pages: { [key: string]: string };
 }
 
+// ... (existing imports)
+
 const Navbar: FC<NavbarProps> = ({ pages }) => {
   const [selectedNavItem, setSelectedNavItem] = useState<string | "/">("home");
   const pathname = usePathname();
@@ -33,13 +35,13 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
       <ul className="navbar-elements hideOnPhone">
         {Object.entries(pages).map(([name, path]) => (
-          <li className={selectedNavItem === name ? "active" : ""}>
+          <li key={name} className={selectedNavItem === name ? "active" : ""}>
             <Link href={path} onClick={() => handleItemClick(name)}>
               {name.toUpperCase()}
             </Link>
           </li>
         ))}
-        <li className={selectedNavItem === "about-hs" ? "active" : ""}>
+        <li key="about-hs" className={selectedNavItem === "about-hs" ? "active" : ""}>
           <Link href="/about-hs" onClick={() => handleItemClick("about-hs")}>
             ABOUT HS
           </Link>

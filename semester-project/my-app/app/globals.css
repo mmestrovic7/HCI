@@ -151,6 +151,7 @@ p{
 .fanExperiencePhoto {
   padding-left: 20px;
 }
+/*animation*/
 .tilting-image,
 .tilting-image2 {
   position: fixed;
@@ -177,14 +178,6 @@ p{
     transform: translateX(200vw) scale(0.4) rotate(-5deg);
   }
 }
-
-
-
-
-
-
-
-
 
 /*mobile*/
 @media only screen and (max-width: 1000px) {
@@ -242,7 +235,6 @@ p{
   display:none;
  }
  .tilting-image,.tilting-image2{
-
   z-index: 2;
  }
  .tilting-image2{

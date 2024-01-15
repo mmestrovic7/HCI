@@ -160,7 +160,7 @@ p{
   width: 400px;
   height: 207px;
   background: url('/redblue.png') center/cover;
-  animation: moveAndTilt 1200s linear infinite;
+  animation: moveAndTilt 1000s linear infinite;
 }
 
 .tilting-image2 {
@@ -240,5 +240,12 @@ p{
  }
  .fanExperiencePhoto{
   display:none;
+ }
+ .tilting-image,.tilting-image2{
+
+  z-index: 2;
+ }
+ .tilting-image2{
+  left: 30%;
  }
 }

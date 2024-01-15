@@ -27,22 +27,23 @@ function Home() {
             />
           </div>
         </div>
-        <CustomButton text="ABOUT HS" href="/about-hs" />      
+        <CustomButton text="ABOUT HS" href="/about-hs" />
       </div>
       <div className="finalHeroSection2">
         <h2>LOVE ON TOUR</h2>
         <div className="heroSection2Photos">
-          <div className="hideOnPhone heroSection2Photos">
-        <PhotoFrame
-            location="Slane Castle"
-            date="June 2023"
-            imageSrc="Rectangle 14.svg"
-          />       
-          <PhotoFrame
-            location="Regio Emilia"
-            date="July 2023"
-            imageSrc="Rectangle 13.svg"
-          />  </div>
+          <div className="photosToHide">
+            <PhotoFrame
+              location="Slane Castle"
+              date="June 2023"
+              imageSrc="Rectangle 14.svg"
+            />
+            <PhotoFrame
+              location="Regio Emilia"
+              date="July 2023"
+              imageSrc="Rectangle 13.svg"
+            />{" "}
+          </div>
           <PhotoFrame
             location="New York City"
             date="XV. September 2023"

@@ -14,7 +14,7 @@ function Home() {
          {Object.entries(pages).map(([name,path])=>(
            <li key={name}>
            <Link href={path}>{name.toUpperCase()}</Link>
-         </li>
+         </li>       
          ))}
         </ul>
       </nav>

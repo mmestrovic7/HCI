@@ -1,0 +1,38 @@
+/* Hamburger.css */
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 30px 0px 0px 30px;
+  }
+  
+  .bar {
+    width: 50px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .additional-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .hamburger-container.open .additional-content {
+    max-height: 1000px; /* Adjust the maximum height to accommodate your content */
+  }
+  
+  .additional-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .additional-content a:hover {
+    background-color: #eee;
+  }
+  

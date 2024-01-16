@@ -1,7 +1,7 @@
 "use client";
 import React, { FC, useState } from "react";
 import Image from "next/image";
-import "./Hamburger.css"; // Import your CSS module
+import "./Hamburger.css";
 
 interface HamburgerProps {
   pages: { [key: string]: string };

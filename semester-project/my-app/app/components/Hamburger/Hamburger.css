@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin: 30px 0px 0px 30px;
+    margin: 30px 20px 0px 30px;
     align-items: flex-end;
   }
   
@@ -12,6 +12,7 @@
     width: 50px;
     height: 4px;
     background-color: #333;
+    border-radius: 10%;
     margin: 6px 0;
     transition: background-color 0.3s ease;
   }
@@ -21,6 +22,8 @@
     overflow: hidden;
     transition: max-height 0.3s ease;
     text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   .hamburger-container.open .additional-content {

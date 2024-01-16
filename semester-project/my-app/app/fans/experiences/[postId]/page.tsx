@@ -1,28 +1,56 @@
-import { Post } from "../page";
+import { createClient, Entry } from 'contentful';
 import Link from "next/link";
+
+interface Post {
+  sys: {
+    id: string;
+  };
+  fields: {
+    title: string;
+    date: string; // You might need to parse this as a Date based on Contentful response format
+    location: string;
+    rating: number;
+    post: string;
+  };
+}
+
+const client = createClient({
+  space: 'lngf8ayzzg03',
+  accessToken: 'PzSShVO2axKM8luY1fbq0_MU6ONERi6cuAe-4CVECM0',
+});
+
+const getPostsFromContentful = async (): Promise<Post[]> => {
+  const response = await client.getEntries<Post>({
+    content_type: 'post', // Assuming 'Post' is the content type ID in Contentful
+  });
+  return response.items;
+};
 
 interface Params {
   postId: string;
 }
 
-const BASE_API_URL = "https://jsonplaceholder.typicode.com";
-
-const getPost = async (id: string): Promise<Post> => {
-  const data = await fetch(`${BASE_API_URL}/posts/${id}`);
-  return data.json();
-};
-
 export default async function BlogPost({ params }: { params: Params }) {
-  const post = await getPost(params.postId);
+  const posts = await getPostsFromContentful();
+  const post = posts.find((p) => p.sys.id === params.postId);
+
+  if (!post) {
+    // Handle post not found
+    return (
+      <main>
+        <h1>Post not found</h1>
+        <Link href="/fans/experiences">GO BACK</Link>
+      </main>
+    );
+  }
 
   return (
     <main>
-      <h1>
-        <span>Experience {post.id}:</span> {post.title}
+      <h1> {post.fields.title}
       </h1>
 
-      <p className="posts-body">{post.body}</p>
-      <h2 className="p-14">
+      <p>{post.fields.post}</p>
+      <h2>
         <Link href="/fans/experiences">GO BACK</Link>
       </h2>
     </main>

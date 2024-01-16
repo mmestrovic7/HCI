@@ -62,7 +62,7 @@ function Home() {
             piece of the atmosphere from many “Love on Tour” shows.
           </p>
           <div className="fanExperiencePhoto">
-            <img src="activeBaloon2.svg" alt="house" height={100} width={150} />
+            <img src="heartBaloon.svg" alt="house" height={100} width={150} />
           </div>
         </div>
         <CustomButton text="START CONNECTING" href="/fans" />

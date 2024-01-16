@@ -7,7 +7,6 @@ function Home() {
   return (
     <main>
       <h1>LOVE ON TOUR GALLERY</h1>
-
     </main>
   )
 }

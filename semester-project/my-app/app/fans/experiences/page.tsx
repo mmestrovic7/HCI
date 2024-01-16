@@ -13,7 +13,6 @@ interface Post {
     rating: number;
     post: string;
   };
-  contentTypeId: string;
 }
 
 const client = createClient({

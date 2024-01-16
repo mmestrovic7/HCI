@@ -5,16 +5,18 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Navbar.css"; // Import your CSS module
 import Hamburger from "../../Hamburger/Hamburger";
+import { Console } from "console";
 
 interface NavbarProps {
   pages: { [key: string]: string };
 }
 
-// ... (existing imports)
-
 const Navbar: FC<NavbarProps> = ({ pages }) => {
-  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">("home");
   const pathname = usePathname();
+  const sanitizedPathname = pathname.substring(1);
+  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">((sanitizedPathname==="") ? "home" : sanitizedPathname);
+  console.log("Initial pathname:", pathname);
+
 
   const handleItemClick = (name: string) => {
     setSelectedNavItem(name);
@@ -31,7 +33,6 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
           alt="Navbar logo"
         />
       </Link>
-
       <div className="showOnPhone">
         <Hamburger pages={pages} />
       </div>

@@ -12,6 +12,7 @@ pitanja:
 *svg na iphoneu
 *katkad sporo učitavanje, postoji li možda problem s dinamičkim rutiranjem?
 *footer, ne učitavaju se uvijek ikone
+*katkad sporo učitavanje, postoji li možda problem s dinamičkim rutiranjem?
 *dizajn sveukupno?
 *možda postovi
 

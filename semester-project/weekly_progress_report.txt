@@ -5,15 +5,19 @@
 *filtriranje postova tj. dodati pretraživanje
 *napraviti carousel
 *dodati footer
-
+*dodati content ostalih kartica
 
 
 pitanja:
 *svg na iphoneu
 *katkad sporo učitavanje, postoji li možda problem s dinamičkim rutiranjem?
+*footer, ne učitavaju se uvijek ikone
+*dizajn sveukupno?
+*možda postovi
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
 *dodan footer
 *dodana animacija
 *poboljšana responzivnost
 *popravljeni fontovi
+*napravljen about-hs card 

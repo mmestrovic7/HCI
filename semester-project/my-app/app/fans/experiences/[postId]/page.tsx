@@ -1,4 +1,4 @@
-import { createClient, Entry, EntryFields } from 'contentful';
+import { createClient } from 'contentful';
 import Link from "next/link";
 
 interface Post {

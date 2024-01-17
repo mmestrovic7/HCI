@@ -1,6 +1,5 @@
 import { createClient } from 'contentful';
 import Link from "next/link";
-import { Entry, EntryFields } from 'contentful';
 
 interface Post {
   sys: {

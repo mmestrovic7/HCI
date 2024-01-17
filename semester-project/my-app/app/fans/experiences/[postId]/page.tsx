@@ -2,6 +2,7 @@ import { createClient } from 'contentful';
 import Link from "next/link";
 
 interface Post {
+  contentTypeId: string,
   sys: {
     id: string;
   };
@@ -19,7 +20,14 @@ const client = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
 });
 
-const getPostsFromContentful = async (): Promise<Post[]> => {
+// const getPostsFromContentful = async (): Promise<Post[]> => {
+//   const response = await client.getEntries<Post>({
+//     content_type: 'post', // Assuming 'Post' is the content type ID in Contentful
+//   });
+//   return response.items;
+// };
+
+const getPostsFromContentful = async () => {
   const response = await client.getEntries<Post>({
     content_type: 'post', // Assuming 'Post' is the content type ID in Contentful
   });

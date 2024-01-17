@@ -1,0 +1,83 @@
+.solo-title {
+    font-size: 30px;
+    margin-top: 100px;
+    padding-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .solo-text {
+    width: 45%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .solocareer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 110%;
+    padding: 0;
+  }
+  
+  .album-container:nth-child(1) {
+    background-color: var(
+      --darker-background
+    ); /* Style for the first .album-container */
+  }
+  
+  .album-container:nth-child(2) {
+    background-color: var(
+      --background-rgb
+    ); /* Style for the second .album-container */
+  }
+  
+  .album-container:nth-child(3) {
+    background-color: var(
+      --darker-background
+    ); /* Style for the third .album-container */
+  }
+  .basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .album-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding: 20px 500px 20px 500px;
+    width: 110%;
+  }
+  .album-songs {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .album-title {
+    /* padding-top: 0px; */
+    padding: 0;
+    margin-top: 0;
+    font-size: 22px;
+  }
+  
+  .album-year {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0px;
+  }
+  
+  .albumPhoto {
+    border-radius: 10%;
+  }
+  

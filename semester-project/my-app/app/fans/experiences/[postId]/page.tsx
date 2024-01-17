@@ -1,4 +1,4 @@
-import { createClient, Entry } from 'contentful';
+import { createClient, Entry, EntryFields } from 'contentful';
 import Link from "next/link";
 
 interface Post {
@@ -7,7 +7,7 @@ interface Post {
   };
   fields: {
     title: string;
-    date: string; // You might need to parse this as a Date based on Contentful response format
+    date: string; 
     location: string;
     rating: number;
     post: string;
@@ -15,8 +15,8 @@ interface Post {
 }
 
 const client = createClient({
-  space: 'lngf8ayzzg03',
-  accessToken: 'PzSShVO2axKM8luY1fbq0_MU6ONERi6cuAe-4CVECM0',
+  space: process.env.CONTENTFUL_SPACE_ID || '',
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
 });
 
 const getPostsFromContentful = async (): Promise<Post[]> => {

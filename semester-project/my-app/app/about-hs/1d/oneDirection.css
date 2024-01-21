@@ -29,36 +29,6 @@
   padding: 0;
 }
 
-.album-container:nth-child(1) {
-  background-color: var(
-    --darker-background
-  ); /* Style for the first .album-container */
-}
-
-.album-container:nth-child(2) {
-  background-color: var(
-    --background-rgb
-  ); /* Style for the second .album-container */
-}
-
-.album-container:nth-child(3) {
-  background-color: var(
-    --darker-background
-  ); /* Style for the third .album-container */
-}
-
-.album-container:nth-child(4) {
-  background-color: var(
-    --background-rgb
-  ); /* Style for the second .album-container */
-}
-
-.album-container:nth-child(5) {
-  background-color: var(
-    --darker-background
-  ); /* Style for the third .album-container */
-  margin-bottom: -5px;
-}
 
 .basic-info {
   display: flex;
@@ -76,6 +46,37 @@
   padding: 20px 500px 20px 500px;
   width: 110%;
 }
+
+.album-container:nth-child(1) {
+    background-color: var(
+      --darker-background
+    ); /* Style for the first .album-container */
+  }
+  
+  .album-container:nth-child(2) {
+    background-color: var(
+      --background-rgb
+    );
+  }
+  
+  .album-container:nth-child(3) {
+    background-color: var(
+      --darker-background
+    );
+  }
+  
+  .album-container:nth-child(4) {
+    background-color: var(
+      --background-rgb
+    ); 
+  }
+  
+  .album-container:nth-child(5) {
+    background-color: var(
+      --darker-background
+    ); 
+    margin-bottom: -5px;
+  }
 .album-songs {
   display: flex;
   flex-direction: column;

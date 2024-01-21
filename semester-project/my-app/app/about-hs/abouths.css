@@ -55,11 +55,9 @@ main {
 
 .landing1D-text:hover .overlay {
   opacity: 1;
-  cursor: pointer;
 }
 .landing1D-text:hover img {
   transform: scale(1.1);
-  cursor: pointer;
 }
 
 .abouths-container {

@@ -8,23 +8,30 @@ function Home() {
       <h1 className="solo-title">SOLO CAREER</h1>
       <p className="solo-text">
         After One Direction broke off in 2016., Harry Styles has gone on to
-        release three incredible albums. <br/><br/>For these albums and songs he got
-        multiple Grammy and BRIT Award wins.
+        release three incredible albums. <br />
+        <br />
+        For these albums and songs he got multiple Grammy and BRIT Award wins.<br/>
+      </p>
+      <p className="clickToListen">
+      (YOU CAN CLICK ON ALBUM COVERS TO LISTEN TO HIS ALBUMS)
       </p>
       <div className="solocareer-container">
         <div className="album-container">
           <div className="basic-info">
             <h1 className="album-title">HARRY STYLES</h1>
-            <p className="album-year">2017.</p>
+
             <div className="albumPhoto">
-              <Image
-                src="harrystyles_cover.svg"
+              <a href="https://www.youtube.com/playlist?list=OLAK5uy_k684NFAsh5fX2ksemLQoP4Uy8IEc_PThg" target="_blank">
+                 <Image
+                src="/harrystyles_cover.svg"
                 alt="imageHScover"
-                width={50}
-                height={50}
+                width={200}
+                height={200}
                 priority
               />
+              </a>
             </div>
+            <p className="album-year">2017.</p>
           </div>
           <ul className="album-songs">
             <li>1. Meet Me in the Hallway</li>
@@ -43,16 +50,18 @@ function Home() {
         <div className="album-container">
           <div className="basic-info">
             <h1 className="album-title">FINE LINE</h1>
-            <p className="album-year">2019.</p>
             <div className="albumPhoto">
-            <Image
-              src="fineline_cover.svg"
-              alt="imageFineline"
-              width={50}
-              height={50}
-              priority
-            />
+            <a href="https://www.youtube.com/playlist?list=OLAK5uy_l-oeXy89ZqIF0Dw3adjIVcpTKpj_diYNY" target="_blank">
+              <Image
+                src="/fineline_cover.svg"
+                alt="imageFineline"
+                width={200}
+                height={200}
+                priority
+              />
+              </a>
             </div>
+            <p className="album-year">2019.</p>
           </div>
           <ul className="album-songs">
             <li>1. Golden</li>
@@ -73,16 +82,18 @@ function Home() {
         <div className="album-container">
           <div className="basic-info">
             <h1 className="album-title">HARRY'S HOUSE</h1>
-            <p className="album-year">2022.</p>
             <div className="albumPhoto">
-            <Image
-              src="/about-hs/harryshouse_cover.svg"
-              alt="imageHarryshouse"
-              width={50}
-              height={50}
-              priority
-            />
+              <a href="https://www.youtube.com/playlist?list=OLAK5uy_mlz0XdHjgFO8gVxdQD94aCHsEfpUlgJJ0" target="blank">
+                <Image
+                src="/harryshouse_cover.svg"
+                alt="imageHarryshouse"
+                width={200}
+                height={200}
+                priority
+              />
+              </a>
             </div>
+            <p className="album-year">2022.</p>
           </div>
 
           <ul className="album-songs">

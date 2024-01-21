@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             <li>21000, Split, Croatia</li>
             <li>
               <img
-                src="phone_vector.svg"
+                src="/phone_vector.svg"
                 alt="imagePhone"
                 width={15}
                 height={15}
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <img
-                src="mail_vector.svg"
+                src="/mail_vector.svg"
                 alt="imageMail"
                 width={15}
                 height={15}
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             <li className="socialmedia-container">
               <a href="https://www.instagram.com/harrystyles/" target="_blank">
                 <img
-                  src="insta_vector.svg"
+                  src="/insta_vector.svg"
                   alt="imageInsta"
                   width={15}
                   height={15}
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               </a>
               <a href="https://www.facebook.com/harrystyles/" target="_blank">
                 <img
-                  src="facebook_vector.svg"
+                  src="/facebook_vector.svg"
                   alt="imageFacebook"
                   width={8}
                   height={8}
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
               </a>
               <a href="https://twitter.com/Harry_Styles" target="_blank">
                 <img
-                  src="twitter_vector.svg"
+                  src="/twitter_vector.svg"
                   alt="imageTwitter"
                   width={17}
                   height={17}

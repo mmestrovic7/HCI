@@ -29,67 +29,63 @@
   padding: 0;
 }
 
-
 .basic-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 500px;
+  justify-self: flex-start;
+  /* width: 500px; */
   margin-top: 20px;
   margin-bottom: 20px;
+  /* border-color: red;
+  border-width: 5px; */
 }
 .album-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 50px;
   padding: 20px 500px 20px 500px;
   width: 110%;
 }
 
 .album-container:nth-child(1) {
-    background-color: var(
-      --darker-background
-    ); /* Style for the first .album-container */
-  }
-  
-  .album-container:nth-child(2) {
-    background-color: var(
-      --background-rgb
-    );
-  }
-  
-  .album-container:nth-child(3) {
-    background-color: var(
-      --darker-background
-    );
-  }
-  
-  .album-container:nth-child(4) {
-    background-color: var(
-      --background-rgb
-    ); 
-  }
-  
-  .album-container:nth-child(5) {
-    background-color: var(
-      --darker-background
-    ); 
-    margin-bottom: -5px;
-  }
+  background-color: var(
+    --darker-background
+  ); /* Style for the first .album-container */
+}
+
+.album-container:nth-child(2) {
+  background-color: var(--background-rgb);
+}
+
+.album-container:nth-child(3) {
+  background-color: var(--darker-background);
+}
+
+.album-container:nth-child(4) {
+  background-color: var(--background-rgb);
+}
+
+.album-container:nth-child(5) {
+  background-color: var(--darker-background);
+  margin-bottom: -5px;
+}
 .album-songs {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self: flex-end;
   padding: 0;
   padding-right: 20px;
   margin: 0;
-  width: 420px;
+  width: 350px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 600;
   /* border-color: rebeccapurple;
-      border-width: 10px; */
+  border-width: 10px; */
 }
 .album-title {
   /* padding-top: 0px; */

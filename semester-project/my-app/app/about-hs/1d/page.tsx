@@ -30,8 +30,8 @@ function Home() {
                 <Image
                   src="/upAllNight.svg"
                   alt="imageUpAllNight"
-                  width={200}
-                  height={200}
+                  width={220}
+                  height={220}
                   priority
                 />
               </a>
@@ -68,8 +68,8 @@ function Home() {
                 <Image
                   src="/takeMeHome.svg"
                   alt="imageTakeMeHome"
-                  width={200}
-                  height={200}
+                  width={220}
+                  height={220}
                   priority
                 />
               </a>
@@ -104,8 +104,8 @@ function Home() {
                 <Image
                   src="/midnightMemories.svg"
                   alt="imageMidnightMmeories"
-                  width={200}
-                  height={200}
+                  width={220}
+                  height={220}
                   priority
                 />
               </a>
@@ -142,8 +142,8 @@ function Home() {
                 <Image
                   src="/four.svg"
                   alt="imageFour"
-                  width={200}
-                  height={200}
+                  width={220}
+                  height={220}
                   priority
                 />
               </a>
@@ -178,8 +178,8 @@ function Home() {
                 <Image
                   src="/madeInTheAm.svg"
                   alt="imagemadeInTheAm"
-                  width={200}
-                  height={200}
+                  width={220}
+                  height={220}
                   priority
                 />
               </a>

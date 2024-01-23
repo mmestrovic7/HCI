@@ -164,6 +164,10 @@ function Home() {
             <li>10. Spaces</li>
             <li>11. Stockholm Syndrome</li>
             <li>12. Clouds</li>
+            <li>13. Change Your Ticket</li>
+            <li>14. Illusion</li>
+            <li>15. Once in a Lifetime</li>
+            <li>16. Act My Age</li>
           </ul>
         </div>
 

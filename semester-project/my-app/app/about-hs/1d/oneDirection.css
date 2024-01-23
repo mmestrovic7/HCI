@@ -137,6 +137,15 @@
     width: 90%;
   }
 
+  .oneD-title{
+    text-align: center;
+  }
+
+  .clickToListen{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
   .basic-info {
     display: flex;
     flex-direction: column;

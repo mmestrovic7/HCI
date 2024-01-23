@@ -69,12 +69,16 @@ main {
   padding-bottom: 0;
 }
 @media screen and (max-width: 1000px) {
-  .abouths-title{
-    font-size:20px;
+  .abouths-title {
+    font-size: 20px;
+    padding-top: 50px;
   }
   .abouths-container {
     flex-direction: column;
     align-items: center;
   }
-  
+  .landing1D-text {
+    scale: 0.9;
+    margin-top: -30px;
+  }
 }

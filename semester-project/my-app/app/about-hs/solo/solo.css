@@ -12,11 +12,11 @@
   margin: 20px 0px 20px 0px;
 }
 
-.clickToListen{
+.clickToListen {
   font-size: small;
   font-weight: 800;
   padding-bottom: 20px;
-  color: #798FBD;
+  color: #798fbd;
 }
 
 .solocareer-container {
@@ -122,6 +122,14 @@
         border-width: 5px; */
   }
 
+  .solo-title {
+    text-align: center;
+  }
+
+  .clickToListen {
+    text-align: center;
+    padding-bottom: 30px;
+  }
   .solo-text {
     font-size: 15px;
     width: 90%;

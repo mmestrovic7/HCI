@@ -1,90 +1,76 @@
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--darker-background);
-    flex-wrap: wrap;
-    margin-top: auto;
-    padding-bottom: 50px;  
-
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darker-background);
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-bottom: 50px;
 }
 
-.footer-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: var(--darker-background);
-    width: 50%;
-    height: 200px;
-    gap: 70px;
-    font-size: 12px;
-    padding-top: 30px;
-    
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--darker-background);
+  height: 200px;
+  gap: 70px;
+  font-size: 12px;
+  padding-top: 30px;
 }
 
-.sitemap-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+.sitemap-container,
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .contact-title,
-.sitemap-title{
-    margin: 0;
-    text-align: left;
-    padding: 0;
-    padding-bottom: 10px;
+.sitemap-title {
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  padding-bottom: 10px;
 }
 
-
-.sitemap-container a:hover{
-    color: var(--sitemap-link-color);
-    font-weight: bold;
-}
-
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* text-align: left; */
+.sitemap-container a:hover {
+  color: var(--sitemap-link-color);
+  font-weight: bold;
 }
 
 .contact-container ul li {
-    display: flex;
-    align-items: center; /* Align items vertically centered */
-    gap: 10px
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  gap: 10px;
+}
+
+.socialmedia-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  height: min-content;
+  padding-top: 20px;
+}
+
+.copyright-text {
+  font-size: 10.5px;
+}
+@media only screen and (max-width: 1000px) {
+  .footer-container {
+    font-size: 10px;
   }
 
-  .socialmedia-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 5px;
-    height: min-content;
-    padding-top: 20px;
+  .contact-title,
+  .sitemap-title {
+    font-size: 12px;
   }
 
-  .copyright-text{
-    font-size: 10.5px;
+  .copyright-text {
+    font-size: 8px;
   }
-  @media only screen and (max-width: 1000px){
-
-    .footer-container{
-        font-size: 10px;
-    }
-
-    .contact-title, 
-    .sitemap-title{
-        font-size: 12px;
-    }
-
-    .copyright-text{
-        font-size: 8px;
-    }
-
-  }
+}

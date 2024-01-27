@@ -33,6 +33,8 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
   return (
     <nav className="navbar">
+      <ul>
+      <li>
       <Link href="/" onClick={() => handleItemClick("home")}>
         <Image
           className="nav-logo"
@@ -42,6 +44,8 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
           alt="Navbar logo"
         />
       </Link>
+      </li>
+      </ul>
       <div className="showOnPhone">
         <Hamburger pages={pages} />
       </div>

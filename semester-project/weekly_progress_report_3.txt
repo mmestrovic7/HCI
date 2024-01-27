@@ -13,3 +13,4 @@
 *popravljen navbar (problem s osvježavanjem u podstranicama)
 *dovršen fan experiences layout
 *napravljen css za pojedinačne postove (još nedovršeno)
+*popravljen footer i hamburger

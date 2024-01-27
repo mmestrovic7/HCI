@@ -1,0 +1,15 @@
+ŠTO TREBAMO NAPRAVITI:
+*poboljšati urednost koda
+*galerija
+*dodati filtriranje postova
+*urediti postove
+*napraviti carousel
+*dodati fan projects
+*popraviti svg za iph
+*dovršiti i popraviti about-hs (osvježavanje fonta)
+
+
+ŠTO SMO OVAJ TJEDAN NAPRAVILE:
+*popravljen navbar (problem s osvježavanjem u podstranicama)
+*dovršen fan experiences layout
+*napravljen css za pojedinačne postove (još nedovršeno)

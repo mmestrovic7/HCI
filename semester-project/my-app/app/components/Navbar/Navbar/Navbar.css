@@ -2,11 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Didact+Gothic&display=swap");
 
 :root {
-  --navbar-text: #f0e6d6;
+
   --navbar-component-hover: #fbb238;
   --navbar-component-default: #ffb6c9;
   --navbar-component-active:#de5b84;
   --background:#f5e3ce;
+  --navbar-text: #f0e6d6;
+  
 }
 .navbar {
     display: flex;

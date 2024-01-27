@@ -14,9 +14,18 @@ interface NavbarProps {
 const Navbar: FC<NavbarProps> = ({ pages }) => {
   const pathname = usePathname();
   const sanitizedPathname = pathname.substring(1);
-  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">((sanitizedPathname==="") ? "home" : sanitizedPathname);
-  console.log("Initial pathname:", pathname);
+  const firstSlashIndex = sanitizedPathname.indexOf("/");
 
+  // If a slash is found, extract the substring up to that index; otherwise, keep the entire string.
+  const path =
+    firstSlashIndex !== -1
+      ? sanitizedPathname.substring(0, firstSlashIndex)
+      : sanitizedPathname;
+
+  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">(
+    path === "" ? "home" : path
+  );
+  console.log("Initial pathname:", pathname);
 
   const handleItemClick = (name: string) => {
     setSelectedNavItem(name);

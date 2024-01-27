@@ -14,6 +14,7 @@
   --sitemap-link-color: #007a9b;
   --landing1Dtext-background: #D9E1F0;
   --landing1Dtext-border: #96aad6;
+  --post-background: #fdefdf;
 }
 main{
   display: flex;

@@ -1,0 +1,29 @@
+.rating,
+.subFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 10px 10px 10px;
+}
+.rating {
+  width: 150px;
+}
+.postClosed,.postOpen {
+  background-color:var(--post-background);
+  width: 70vw;
+  border-radius: 10px;
+}
+.postOpen{
+  width: 50vw;
+}
+.title{
+    margin-top: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .postClosed {
+    width: 90vw;
+  }
+  .rating{
+    width:120px;
+  }
+}

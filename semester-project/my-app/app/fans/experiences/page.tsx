@@ -22,7 +22,7 @@ const client = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
 });
 
-const getPostsFromContentful = async () => {
+export const getPostsFromContentful = async () => {
   const response = await client.getEntries<Post>({
     content_type: "post",
   });

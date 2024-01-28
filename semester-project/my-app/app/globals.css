@@ -115,6 +115,7 @@ p{
 }
 .finalHeroSection {
   display: grid;
+  height:95vh;
 } 
 
 /*second section*/

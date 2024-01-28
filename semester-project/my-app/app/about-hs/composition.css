@@ -1,4 +1,13 @@
-.oneD-title {
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  gap: 10px;
+  width: 100vw;
+}
+.mainTitle {
   font-size: 30px;
   margin-top: 100px;
   padding-top: 0px;
@@ -6,10 +15,11 @@
   padding-bottom: 0;
 }
 
-.oneD-text {
-  width: 45%;
+
+.description {
+  margin: 20px 0px 20px 0px; 
   text-align: center;
-  margin: 20px 0px 20px 0px;
+  width:45%;
 }
 
 .clickToListen {
@@ -19,14 +29,35 @@
   color: #798fbd;
 }
 
-.oneDcareer-container {
+.mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 110%;
+  width: 100vw;
   padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:100px;
+    padding:20px;
+    
+}
+.container:nth-child(odd) {
+  background-color: var(
+    --darker-background
+  ); /* Style for the first .album-container */
+}
+
+.container:nth-child(even) {
+  background-color: var(
+    --background-rgb
+  ); 
+  flex-direction: row-reverse;
 }
 
 .basic-info {
@@ -34,56 +65,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  justify-self: flex-start;
-  /* width: 500px; */
   margin-top: 20px;
   margin-bottom: 20px;
-  /* border-color: red;
-  border-width: 5px; */
-}
-.album-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 50px;
-  padding: 20px 500px 20px 500px;
-  width: 110%;
+  width:320px;
 }
 
-.album-container:nth-child(odd) {
-  background-color: var(
-    --darker-background
-  ); /* Style for the first .album-container */
-}
-
-.album-container:nth-child(even) {
-  background-color: var(--background-rgb);
-}
-
-
-.album-songs {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-self: flex-end;
-  padding: 0;
-  padding-right: 20px;
+  width:320px;
   margin: 0;
-  width: 350px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 600;
   /* border-color: rebeccapurple;
-  border-width: 10px; */
+      border-width: 10px; */
 }
-.album-title {
+.subTitle {
   /* padding-top: 0px; */
   padding: 0;
   margin-top: 0;
   font-size: 22px;
 }
 
-.album-year {
+.year {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 15px;
   margin: 0;
@@ -91,27 +97,26 @@
   padding-top: 20px;
 }
 
-.albumPhoto {
+.photo {
   border-radius: 10%;
 }
 
 @media only screen and (max-width: 1000px) {
-  .album-container {
+  .container,.container:nth-child(even) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border-color: red;
-          border-width: 5px; */
-    width: auto;
+          border-width: 5px; */  
     gap: 5px;
   }
 
-  .album-title {
+  .subTitle {
     font-size: 19px;
   }
 
-  .album-songs {
+  .content {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -121,18 +126,13 @@
           border-width: 5px; */
   }
 
-  .oneD-text {
-    font-size: 15px;
-    width: 90%;
-  }
-
-  .oneD-title{
-    text-align: center;
-  }
-
-  .clickToListen{
+  .clickToListen {
     text-align: center;
     padding-bottom: 30px;
+  }
+  .description {
+    font-size: 15px;
+    width: 90%;
   }
 
   .basic-info {
@@ -144,7 +144,7 @@
     /* border-color: blue;
         border-width: 5px; */
   }
-  .oneDcareer-container {
+  .mainContainer {
     align-items: center;
     justify-content: center;
   }

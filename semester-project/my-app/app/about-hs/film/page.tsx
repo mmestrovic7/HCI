@@ -1,29 +1,32 @@
-import Footer from "@/app/components/Footer/Footer";
+
 import Image from "next/image";
 import Link from "next/link";
-import "./film.css";
+import "../composition.css";
+
 function Home() {
   return (
     <main>
-      <h1 className="film-title">FILM CAREER</h1>
-      <p className="film-text">
+      <div className="intro">
+      <h1 className="mainTitle">FILM CAREER</h1>
+      <p className="description">
         Harry Styles, known initially for his music career with One Direction,
-        has ventured into acting.<br/><br/> 
+        has ventured into acting.<br /><br />
         He made his film debut in Christopher Nolan's
         "Dunkirk" (2017), receiving praise for his performance. Following this
         success, Styles has continued to pursue acting, securing roles in
-        projects like "Dunkerque" (2021) and "Don't Worry Darling" (2022).<br/><br/> 
+        projects like "Dunkerque" (2021) and "Don't Worry Darling" (2022).<br /><br />
         His film career shows a successful transition from music to acting, earning
         recognition for his talents in both domains.
       </p>
-      <p className="checkRatings">
+      <p className="clickToListen">
         (YOU CAN CLICK ON FILM POSTERS TO CHECK THEIR RATINGS ON IMDb)
       </p>
-      <div className="filmCareer-container">
-        <div className="movie-container">
+      </div>
+      <div className="mainContainer">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="movie-title">DUNKIRK</h1>
-            <div className="moviePoster">
+            <h1 className="subTitle">DUNKIRK</h1>
+            <div className="photo">
               <a
                 href="https://www.imdb.com/title/tt5013056/"
                 target="_blank"
@@ -37,9 +40,9 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="movie-year">2017.</p>
+            <p className="year">2017.</p>
           </div>
-          <div className="movie-description">
+          <div className="content">
             <p className="movie-role">
               <strong>HARRY'S ROLE:</strong> Alex
             </p>
@@ -50,10 +53,10 @@ function Home() {
           </div>
         </div>
 
-        <div className="movie-container">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="movie-title">DON'T WORRY DARLING</h1>
-            <div className="moviePoster">
+            <h1 className="subTitle">DON'T WORRY DARLING</h1>
+            <div className="photo">
               <a
                 href="https://www.imdb.com/title/tt10731256/?ref_=nv_sr_srsg_0_tt_5_nm_1_q_dont%2520worry%2520dar"
                 target="_blank"
@@ -67,9 +70,9 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="movie-year">2022.</p>
+            <p className="year">2022.</p>
           </div>
-          <div className="movie-description">
+          <div className="content">
             <p className="movie-role">
               <strong>HARRY'S ROLE:</strong> Jack
             </p>
@@ -80,10 +83,10 @@ function Home() {
           </div>
         </div>
 
-        <div className="movie-container">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="movie-title">MY POLICEMAN</h1>
-            <div className="moviePoster">
+            <h1 className="subTitle">MY POLICEMAN</h1>
+            <div className="photo">
               <a
                 href="https://www.imdb.com/title/tt13139228/"
                 target="_blank"
@@ -97,9 +100,9 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="movie-year">2022.</p>
+            <p className="year">2022.</p>
           </div>
-          <div className="movie-description">
+          <div className="content">
             <p className="movie-role">
               <strong>HARRY'S ROLE:</strong> Younger Tom
             </p>

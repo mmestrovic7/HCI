@@ -7,6 +7,7 @@
 *dodati fan projects
 *popraviti svg za iph
 *dovršiti i popraviti about-hs (osvježavanje fonta)
+*dodati komponente u about-hs
 
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
@@ -14,3 +15,5 @@
 *dovršen fan experiences layout
 *napravljen css za pojedinačne postove (još nedovršeno)
 *popravljen footer i hamburger
+*poboljšana urednost about-hs koda i dodan row reverse
+*po uzoru na about-hs podstranice napravljen privremeni layout za fan projects

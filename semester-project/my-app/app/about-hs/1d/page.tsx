@@ -1,12 +1,12 @@
-import Footer from "@/app/components/Footer/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import "./oneDirection.css";
+import "../composition.css";
 function Home() {
   return (
     <main>
-      <h1 className="oneD-title">ONE DIRECTION</h1>
-      <p className="oneD-text">
+      <div className="intro">
+      <h1 className="mainTitle">ONE DIRECTION</h1>
+      <p className="description">
         One Direction, formed on the British television show "The X Factor" in
         2010, swiftly became a global phenomenon with their infectious pop
         sound. <br />
@@ -18,11 +18,12 @@ function Home() {
       <p className="clickToListen">
         (YOU CAN CLICK ON ALBUM COVERS TO LISTEN TO THEIR ALBUMS)
       </p>
-      <div className="oneDcareer-container">
-        <div className="album-container">
+      </div>
+      <div className="mainContainer">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="album-title">UP ALL NIGHT</h1>
-            <div className="albumPhoto">
+            <h1 className="subTitle">UP ALL NIGHT</h1>
+            <div className="photo">
               <a
                 href="https://www.youtube.com/playlist?list=OLAK5uy_kPecePAIWHnM9rT-phtHGAXE1rkyPO8K0"
                 target="_blank"
@@ -36,9 +37,9 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="album-year">2011.</p>
+            <p className="year">2011.</p>
           </div>
-          <ul className="album-songs">
+          <ul className="content">
             <li>1. What Makes You Beautiful</li>
             <li>2. Gotta Be You</li>
             <li>3. One Thing</li>
@@ -57,10 +58,10 @@ function Home() {
           </ul>
         </div>
 
-        <div className="album-container">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="album-title">TAKE ME HOME</h1>
-            <div className="albumPhoto">
+            <h1 className="subTitle">TAKE ME HOME</h1>
+            <div className="photo">
               <a
                 href="https://www.youtube.com/playlist?list=OLAK5uy_nQz3HzBO4sNwnQEi91RTS9iB4eketqrPs"
                 target="_blank"
@@ -74,9 +75,9 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="album-year">2012.</p>
+            <p className="year">2012.</p>
           </div>
-          <ul className="album-songs">
+          <ul className="content">
             <li>1. Live While We're Young</li>
             <li>2. Kiss You</li>
             <li>3. Little Things</li>
@@ -93,10 +94,10 @@ function Home() {
           </ul>
         </div>
 
-        <div className="album-container">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="album-title">MIDNIGHT MEMORIES</h1>
-            <div className="albumPhoto">
+            <h1 className="subTitle">MIDNIGHT MEMORIES</h1>
+            <div className="photo">
               <a
                 href="https://www.youtube.com/playlist?list=OLAK5uy_k-fR8UG9108cSGptPFWTQpRabw7Kyzc5c"
                 target="blank"
@@ -110,10 +111,10 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="album-year">2013.</p>
+            <p className="year">2013.</p>
           </div>
 
-          <ul className="album-songs">
+          <ul className="content">
             <li>1.Best Song Ever</li>
             <li>2. Story Of My Life</li>
             <li>3. Diana</li>
@@ -131,10 +132,10 @@ function Home() {
           </ul>
         </div>
 
-        <div className="album-container">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="album-title">FOUR</h1>
-            <div className="albumPhoto">
+            <h1 className="subTitle">FOUR</h1>
+            <div className="photo">
               <a
                 href="https://www.youtube.com/playlist?list=OLAK5uy_k4LFwctseSNnXT0MyeNB1j9boPLFjO-ZI"
                 target="blank"
@@ -148,10 +149,10 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="album-year">2014.</p>
+            <p className="year">2014.</p>
           </div>
 
-          <ul className="album-songs">
+          <ul className="content">
             <li>1. Steal My Girl</li>
             <li>2. Ready To Run</li>
             <li>3. Where Do Broken Hearts Go</li>
@@ -171,10 +172,10 @@ function Home() {
           </ul>
         </div>
 
-        <div className="album-container">
+        <div className="container">
           <div className="basic-info">
-            <h1 className="album-title">MADE IN THE A.M.</h1>
-            <div className="albumPhoto">
+            <h1 className="subTitle">MADE IN THE A.M.</h1>
+            <div className="photo">
               <a
                 href="https://www.youtube.com/playlist?list=OLAK5uy_kng4OEgFEJ1lxWRj7wjxewLbSAu6vmzzE"
                 target="blank"
@@ -188,10 +189,10 @@ function Home() {
                 />
               </a>
             </div>
-            <p className="album-year">2015.</p>
+            <p className="year">2015.</p>
           </div>
 
-          <ul className="album-songs">
+          <ul className="content">
             <li>1. Hey Angel</li>
             <li>2. Drag Me Down</li>
             <li>3. Perfect</li>

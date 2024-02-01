@@ -5,15 +5,20 @@
 *urediti postove
 *napraviti carousel
 *dodati fan projects
-*popraviti svg za iph
-*dovršiti i popraviti about-hs (osvježavanje fonta)
+*dovršiti about-hs
 *dodati komponente u about-hs
 
+PROBLEMI:
+*iphone: svg 
+*razmak između početnog dijela i post dijela prije osvježavanja na about-hs podstranicama
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
 *popravljen navbar (problem s osvježavanjem u podstranicama)
 *dovršen fan experiences layout
-*napravljen css za pojedinačne postove (još nedovršeno)
+*napravljen css za pojedinačne postove
 *popravljen footer i hamburger
 *poboljšana urednost about-hs koda i dodan row reverse
 *po uzoru na about-hs podstranice napravljen privremeni layout za fan projects
+*popravljen prvi hero section na homepageu
+*napravljeni botuni za filtriranje (još nema filtriranja)
+*zvjezdice se pojavljuju i na iphone-u

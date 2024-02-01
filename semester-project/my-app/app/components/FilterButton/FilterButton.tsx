@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./FilterButton.css";
@@ -20,6 +19,7 @@ const FilterButton: React.FC<FilterButtonProps> = ({ color, number }) => {
   const buttonClassName = `filter-button ${color ? color : ""} ${
     isInverted ? "inverted" : ""
   }`;
+  
   return (
     <div className={buttonClassName} onClick={handleClick}>
       <button>

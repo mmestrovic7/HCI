@@ -52,6 +52,35 @@ function Home() {
             </p>
           </div>
         </div>
+        <div className="container">
+          <div className="basic-info">
+            <h1 className="subTitle">MY POLICEMAN</h1>
+            <div className="photo">
+              <a
+                href="https://www.imdb.com/title/tt13139228/"
+                target="_blank"
+              >
+                <Image
+                  src="/myPoliceman_poster.svg"
+                  alt="imageMyPoliceman"
+                  width={204}
+                  height={300}
+                  priority
+                />
+              </a>
+            </div>
+            <p className="year">2022.</p>
+          </div>
+          <div className="content">
+            <p className="movie-role">
+              <strong>HARRY'S ROLE:</strong> Younger Tom
+            </p>
+            <p className="movie-description">
+              <strong>DESCRIPTION:</strong> cjksbjkvnbsjčjlkf lgeeoh wdsbhodćgoh
+              oid wio gh r ghieogoiweasgwhr
+            </p>
+          </div>
+        </div>
 
         <div className="container">
           <div className="basic-info">
@@ -83,35 +112,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">MY POLICEMAN</h1>
-            <div className="photo">
-              <a
-                href="https://www.imdb.com/title/tt13139228/"
-                target="_blank"
-              >
-                <Image
-                  src="/myPoliceman_poster.svg"
-                  alt="imageMyPoliceman"
-                  width={204}
-                  height={300}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2022.</p>
-          </div>
-          <div className="content">
-            <p className="movie-role">
-              <strong>HARRY'S ROLE:</strong> Younger Tom
-            </p>
-            <p className="movie-description">
-              <strong>DESCRIPTION:</strong> cjksbjkvnbsjčjlkf lgeeoh wdsbhodćgoh
-              oid wio gh r ghieogoiweasgwhr
-            </p>
-          </div>
-        </div>
+        
       </div>
     </main>
   );

@@ -6,7 +6,8 @@
   padding: 15px 10px 10px 10px;
 }
 .rating {
-  width: 150px;
+  transform: scale(1.5);
+  padding-right: 30px;
 }
 .postClosed,.postOpen {
   background-color:var(--post-background);

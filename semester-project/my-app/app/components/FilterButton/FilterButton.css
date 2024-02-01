@@ -1,0 +1,46 @@
+:root {
+  --red: #fd0600;
+  --orange: #fa9f06;
+  --blue: #00acda;
+}
+.filter-button {
+  color: var(--post-background);
+  margin: 10px;
+  padding: 5px 7px 5px 7px;
+  border-radius: 10px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 15px;
+}
+.blue {
+  background-color: var(--blue);
+}
+.red {
+  background-color: var(--red);
+}
+.orange {
+  background-color: var(--orange);
+}
+.filter-button > button > div > span {
+  padding: 0px 4px 0px 4px;
+}
+.filter-button.inverted {
+  background-color: var(--post-background);
+}
+.filter-button.inverted.red {
+  color: var(--red);
+}   
+.filter-button.inverted.orange {
+  color: var(--orange);
+}
+.filter-button.inverted.blue {
+  color: var(--blue);
+}
+.heart-icon {
+  padding: 4.5px 3.5px 0px 3.5px;
+}
+.line {
+  display: flex;
+}
+.num {
+  width: 21.23px;
+}

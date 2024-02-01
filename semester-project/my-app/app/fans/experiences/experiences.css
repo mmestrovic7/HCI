@@ -4,5 +4,8 @@
   box-sizing: border-box;
   padding-bottom: 10px;
 }
-
+.filter-buttons{
+  display:flex;
+  justify-content: space-evenly;
+}
 

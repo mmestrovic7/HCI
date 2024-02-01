@@ -1,6 +1,7 @@
 import { createClient } from "contentful";
 import Link from "next/link";
 import PostClosed from "@/app/components/PostClosed/PostClosed";
+import FilterButton from "@/app/components/FilterButton/FilterButton";
 import "./experiences.css";
 
 export interface Post {
@@ -35,6 +36,11 @@ export default async function Post() {
   return (
     <main>
       <h1>FAN EXPERIENCES</h1>
+      <div className="filter-buttons">
+      <FilterButton color="red" number="1" />
+      <FilterButton color="blue" number="2"/>
+      <FilterButton color="orange" number="3"/>
+      </div>
       <ul className="posts">
         {posts.map((post) => (
           <li key={post.sys.id}>

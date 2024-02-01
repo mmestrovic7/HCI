@@ -1,6 +1,6 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
 import "./PostClosed.css";
 
 interface PostProps {
@@ -8,12 +8,11 @@ interface PostProps {
   location: string;
   date: string;
   rating: number;
-  open:boolean;
+  open: boolean;
 }
 
-const PostClosed: React.FC<PostProps> = ({ title, location, date, rating, open }) => {
+const generateStars = (rating: number): React.ReactNode[] => {
   const stars = [];
-
   for (let i = 1; i <= 5; i++) {
     const filled = i <= rating;
     stars.push(
@@ -24,7 +23,12 @@ const PostClosed: React.FC<PostProps> = ({ title, location, date, rating, open }
       />
     );
   }
-  const postClass = `postClosed ${open == false ? '': 'postOpen'}`;
+  return stars;
+};
+
+const PostClosed: React.FC<PostProps> = ({ title, location, date, rating, open }) => {
+  const postClass = `postClosed ${open ? "postOpen" : ""}`;
+
   return (
     <div className={postClass}>
       <h1 className="title">{title}</h1>
@@ -34,7 +38,7 @@ const PostClosed: React.FC<PostProps> = ({ title, location, date, rating, open }
           {date}
           <br />
         </div>
-        <div className="rating"> {stars}</div>
+        <div className="rating"> {generateStars(rating)}</div>
       </div>
     </div>
   );

@@ -1,36 +1,9 @@
-import { createClient } from "contentful";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import PostClosed from "@/app/components/PostClosed/PostClosed";
 import FilterButton from "@/app/components/FilterButton/FilterButton";
 import "./experiences.css";
-
-export interface Post {
-  contentTypeId: string;
-  sys: {
-    id: string;
-  };
-  fields: {
-    title: string;
-    date: string;
-    location: string;
-    rating: number;
-    post: string;
-  };
-}
-
-const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID || "",
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
-});
-
-export const getPostsFromContentful = async () => {
-  const response = await client.getEntries<Post>({
-    content_type: "post",
-  });
-  return response.items;
-};
-
+import { Post } from "@/app/content";
+import { getPostsFromContentful } from "@/app/content";
 export default async function Post() {
   const posts = await getPostsFromContentful();
 

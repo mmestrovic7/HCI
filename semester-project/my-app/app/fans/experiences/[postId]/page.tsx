@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { getPostsFromContentful } from "../page";
+import { getPostsFromContentful } from "@/app/content";
 import "./post.css";
 import PostClosed from "@/app/components/PostClosed/PostClosed";
 import CustomButton from "@/app/components/CustomButton/CustomButton";

@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Didact+Gothic&display=swap");
 
@@ -115,7 +116,6 @@ p{
 }
 .finalHeroSection {
   display: grid;
-  height:95vh;
 } 
 
 /*second section*/

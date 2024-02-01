@@ -25,6 +25,7 @@
     width: 90vw;
   }
   .rating{
-    width:120px;
+    transform: scale(1.2);
+    padding-right: 20px;
   }
 }

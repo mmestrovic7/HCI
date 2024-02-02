@@ -6,7 +6,7 @@ import "../composition.css";
 function Home() {
   return (
     <main>
-      <div className="intro">
+      <div className="intro ttText">
       <h1 className="mainTitle">FILM CAREER</h1>
       <p className="description">
         Harry Styles, known initially for his music career with One Direction,
@@ -23,6 +23,7 @@ function Home() {
       </p>
       </div>
       <div className="mainContainer">
+
         <div className="container">
           <div className="basic-info">
             <h1 className="subTitle">DUNKIRK</h1>
@@ -42,16 +43,17 @@ function Home() {
             </div>
             <p className="year">2017.</p>
           </div>
-          <div className="content">
+          <div className="content lite">
             <p className="movie-role">
               <strong>HARRY'S ROLE:</strong> Alex
             </p>
             <p className="movie-description">
-              <strong>DESCRIPTION:</strong> cjksbjkvnbsjčjlkf lgeeoh wdsbhodćgoh
-              oid wio gh r ghieogoiweasgwhr
+              <strong>DESCRIPTION:</strong> Allied soldiers from Belgium, the British Commonwealth and Empire, 
+              and France are surrounded by the German Army and evacuated during a fierce battle in World War II.
             </p>
           </div>
         </div>
+
         <div className="container">
           <div className="basic-info">
             <h1 className="subTitle">MY POLICEMAN</h1>
@@ -71,13 +73,13 @@ function Home() {
             </div>
             <p className="year">2022.</p>
           </div>
-          <div className="content">
+          <div className="content lite">
             <p className="movie-role">
               <strong>HARRY'S ROLE:</strong> Younger Tom
             </p>
             <p className="movie-description">
-              <strong>DESCRIPTION:</strong> cjksbjkvnbsjčjlkf lgeeoh wdsbhodćgoh
-              oid wio gh r ghieogoiweasgwhr
+              <strong>DESCRIPTION:</strong> The arrival of Patrick into Marion and Tom's home 
+              triggers the exploration of seismic events from 40 years previously.
             </p>
           </div>
         </div>
@@ -101,13 +103,13 @@ function Home() {
             </div>
             <p className="year">2022.</p>
           </div>
-          <div className="content">
+          <div className="content lite">
             <p className="movie-role">
               <strong>HARRY'S ROLE:</strong> Jack
             </p>
             <p className="movie-description">
-              <strong>DESCRIPTION:</strong> cjksbjkvnbsjčjlkf lgeeoh wdsbhodćgoh
-              oid wio gh r ghieogoiweasgwhr
+              <strong>DESCRIPTION: </strong>While her husband leaves home everyday to work in a top secret facility, 
+              a young 1950s housewife begins to question her life when she notices strange behavior from the other wives in the neighborhood.
             </p>
           </div>
         </div>

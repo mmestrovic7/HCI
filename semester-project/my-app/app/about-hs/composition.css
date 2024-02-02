@@ -88,7 +88,9 @@
   /* border-color: rebeccapurple;
       border-width: 10px; */
 }
-
+.lite{
+  font-weight: 400;
+}
 
 .subTitle {
   /* padding-top: 0px; */
@@ -110,6 +112,9 @@
 }
 .ttText{
   padding:0px;
+}
+.tt{
+  padding-bottom:20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -144,7 +149,6 @@
     padding-bottom: 30px;
   }
   .description {
-    font-size: 15px;
     width: 90%;
   }
 

@@ -10,7 +10,7 @@ function Home() {
   const tikTokVideopath3 = "/TT_OUTFITS.mp4";
   return (
     <main>
-      <div className="intro">
+      <div className="intro tt">
         <h1 className="mainTitle">FAN PROJECTS</h1>
         <p className="description">
   Welcome to the world of fan projects where fans come together to create unforgettable moments. 
@@ -27,7 +27,7 @@ function Home() {
           <div className="basic-info">
             <TikTok src={tikTokVideopath1} />
           </div>
-          <div className="content">
+          <div className="content lite">
             <h1 className="subTitle">RAINBOW LIGHTS</h1>
             <p className="ttText">
               It became a Love on Tour tradition to make a sea of rainbow
@@ -42,7 +42,7 @@ function Home() {
           <div className="basic-info">
             <TikTok src={tikTokVideopath2} />
           </div>
-          <div className="content">
+          <div className="content lite">
             <h1 className="subTitle">HEART BALOON</h1>
             <p className="ttText">
               Once a fan let go of the heart balloon during the concert. Harry
@@ -56,7 +56,7 @@ function Home() {
           <div className="basic-info">
             <TikTok src={tikTokVideopath3} />
           </div>
-          <div className="content">
+          <div className="content lite">
             <h1 className="subTitle">CONCERT FASHION</h1>
             <p className="ttText">
               Finding the path to the concert is quite easy, just follow the

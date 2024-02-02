@@ -10,7 +10,7 @@
 
 PROBLEMI:
 *iphone: svg 
-*razmak između početnog dijela i post dijela prije osvježavanja na about-hs podstranicama
+*iphone video 
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
 *popravljen navbar (problem s osvježavanjem u podstranicama)
@@ -22,3 +22,5 @@ PROBLEMI:
 *popravljen prvi hero section na homepageu
 *napravljeni botuni za filtriranje (još nema filtriranja)
 *zvjezdice se pojavljuju i na iphone-u
+*popravljen gap koji bi nastao zbog about-hs-a
+*dovršen fan projects

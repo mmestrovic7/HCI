@@ -18,10 +18,13 @@ const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID || "",
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
 });
-
 export const getPostsFromContentful = async () => {
   const response = await client.getEntries<Post>({
     content_type: "post",
   });
+ 
   return response.items;
+  
 };
+let cachedPosts=getPostsFromContentful;
+export { cachedPosts };

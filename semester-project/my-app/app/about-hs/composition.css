@@ -1,3 +1,4 @@
+
 .intro{
   display: flex;
   flex-direction: column;
@@ -107,6 +108,9 @@
 .photo {
   border-radius: 10%;
 }
+.ttText{
+  padding:0px;
+}
 
 @media only screen and (max-width: 1000px) {
   .container,.container:nth-child(even) {
@@ -118,6 +122,9 @@
           border-width: 5px; */  
     gap: 5px;
   }
+  .container:nth-child(even)>.basic-info{
+    align-items: center;
+  }
 
   .subTitle {
     font-size: 19px;
@@ -128,7 +135,6 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    font-size: 15px;
     /* border-color: blue;
           border-width: 5px; */
   }

@@ -1,11 +1,12 @@
+
 import Link from "next/link";
 import PostClosed from "@/app/components/PostClosed/PostClosed";
 import FilterButton from "@/app/components/FilterButton/FilterButton";
 import "./experiences.css";
 import { Post } from "@/app/content";
-import { getPostsFromContentful } from "@/app/content";
+import { getPostsFromContentful} from "@/app/content";  
 export default async function Post() {
-  const posts = await getPostsFromContentful();
+  const posts = await getPostsFromContentful(); 
 
   return (
     <main>

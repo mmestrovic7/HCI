@@ -33,7 +33,7 @@ function Home() {
               It became a Love on Tour tradition to make a sea of rainbow
               lights. Its a fan organised project where people give out stickers
               to put on the flasghlights. The color of the sticker is different
-              for each sector
+              for each sector.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ function Home() {
             <p className="ttText">
               Once a fan let go of the heart balloon during the concert. Harry
               posted the picture of the baloon to his Instagram story making it
-              an iconic tour moment. It also became a trend for future concerts
+              an iconic tour moment. It also became a trend for future concerts!
             </p>
           </div>
         </div>

@@ -9,7 +9,7 @@ interface TikTokProps {
 const TikTok: React.FC<TikTokProps> = ({ src }) => {
 
   return (
-    <video controls className='tikTok'>
+    <video controls className='tikTok' preload='metadata'>
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>

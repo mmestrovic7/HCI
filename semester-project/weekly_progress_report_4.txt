@@ -4,7 +4,7 @@
 *dodati filtriranje postova
 *napraviti carousel
 *zvjezdice
-
+*import png
 
 PROBLEMI:
 *iphone: svg 

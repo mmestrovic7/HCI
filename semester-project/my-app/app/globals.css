@@ -15,7 +15,10 @@
   --sitemap-link-color: #007a9b;
   --landing1Dtext-background: #D9E1F0;
   --landing1Dtext-border: #96aad6;
-  --post-background: #fdefdf;
+  --post-background: #fdefdf; 
+  --navbar-component-default: #ffb6c9; 
+  --navbar-component-active:#de5b84;
+
 }
 main{
   display: flex;

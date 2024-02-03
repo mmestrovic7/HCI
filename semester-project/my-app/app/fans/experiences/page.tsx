@@ -5,12 +5,13 @@ import FilterButton from "@/app/components/FilterButton/FilterButton";
 import "./experiences.css";
 import { Post } from "@/app/content";
 import { getPostsFromContentful} from "@/app/content";  
+import "../../about-hs/composition.css"
 export default async function Post() {
   const posts = await getPostsFromContentful(); 
 
   return (
     <main>
-      <h1>FAN EXPERIENCES</h1>
+      <h1 className="mainTitle">FAN EXPERIENCES</h1>
       <div className="filter-buttons">
         <FilterButton color="red" number="1" />
         <FilterButton color="blue" number="2" />

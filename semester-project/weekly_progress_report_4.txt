@@ -1,0 +1,13 @@
+ŠTO TREBAMO NAPRAVITI:
+*poboljšati urednost koda
+*galerija
+*dodati filtriranje postova
+*napraviti carousel
+*zvjezdice
+
+
+PROBLEMI:
+*iphone: svg 
+
+ŠTO SMO OVAJ TJEDAN NAPRAVILE:
+EMPTY

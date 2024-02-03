@@ -10,7 +10,6 @@
 
 PROBLEMI:
 *iphone: svg 
-*iphone video 
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
 *popravljen navbar (problem s osvježavanjem u podstranicama)
@@ -24,3 +23,4 @@ PROBLEMI:
 *zvjezdice se pojavljuju i na iphone-u
 *popravljen gap koji bi nastao zbog about-hs-a
 *dovršen fan projects
+*popravljeni videi na iph 

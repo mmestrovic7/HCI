@@ -52,7 +52,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
           className="nav-logo"
           src={logo}
           width={370}
-          height={62}
+          height={40}
           alt="Navbar logo"
         />
       </Link>

@@ -17,7 +17,6 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   const firstSlashIndex = sanitizedPathname.indexOf("/");
   // State for mobileOS
   const [mobileOS, setMobileOS] = useState<string>("unknown");
-  const initialLogo=true;
   useEffect(() => {
     // Use setMobileOS to update the state
     setMobileOS(getMobileOperatingSystem());

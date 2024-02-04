@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 import CustomButton from "./components/CustomButton/CustomButton";
+import HomePagePhoto from "./components/HomePagePhoto/HomePagePhoto";
 
 function Home() {
   return (
@@ -20,12 +21,7 @@ function Home() {
             </p>
           </div>
           <div className="homePagePhotos ">
-            <img
-              src="harryHERO.svg"
-              alt="image1"
-              width={554}
-              height={911.413}
-            />
+            <HomePagePhoto />
           </div>
         </div>
         <CustomButton text="ABOUT HS" href="/about-hs" />

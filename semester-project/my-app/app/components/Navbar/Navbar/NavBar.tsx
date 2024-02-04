@@ -22,10 +22,10 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   }, []);
   let logo="/hslogo";
   if(mobileOS==="iOS"){
-    logo+=".png";
+    logo+="/dunkirk.png";
   }
   else{
-    logo+=".svg";
+    logo+="/hslogo.svg";
   }
 
 

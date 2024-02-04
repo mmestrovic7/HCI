@@ -22,7 +22,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
     setMobileOS(getMobileOperatingSystem());
   }, []); // Empty dependency array means useEffect runs once after initial render
 
-  let logo = "/hslogo";
+  let logo = "/hslogo2";
   if (mobileOS === "iOS") {
     logo += ".png";
   } else {
@@ -51,8 +51,8 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
         <Image
           className="nav-logo"
           src={logo}
-          width={370}
-          height={40}
+          width={373}
+          height={51}
           alt="Navbar logo"
         />
       </Link>

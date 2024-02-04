@@ -15,19 +15,20 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   const pathname = usePathname();
   const sanitizedPathname = pathname.substring(1);
   const firstSlashIndex = sanitizedPathname.indexOf("/");
-  let mobileOS = "unknown";
-  useEffect(() => {
-     mobileOS = getMobileOperatingSystem();
-    console.log(`Mobile Operating System: ${mobileOS}`);
-  }, []);
-  let logo="";
-  if(mobileOS==="iOS"){
-    logo+="/dunkirk.png";
-  }
-  else{
-    logo+="/hslogo.svg";
-  }
+  // State for mobileOS
+  const [mobileOS, setMobileOS] = useState<string>("unknown");
 
+  useEffect(() => {
+    // Use setMobileOS to update the state
+    setMobileOS(getMobileOperatingSystem());
+  }, []); // Empty dependency array means useEffect runs once after initial render
+
+  let logo = "";
+  if (mobileOS === "iOS") {
+    logo += "/dunkirk.png";
+  } else {
+    logo += "/hslogo.svg";
+  }
 
   // If a slash is found, extract the substring up to that index; otherwise, keep the entire string.
   const path =

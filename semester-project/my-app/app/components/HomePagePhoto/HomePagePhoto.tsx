@@ -16,8 +16,8 @@ const HomePagePhoto: React.FC = () => {
 
   if (mobileOS === "iOS") {
     src += ".png";
-    height=900;
-    width=500;
+    height=850;
+    width=600;
   } else {
     src += ".svg";
   }

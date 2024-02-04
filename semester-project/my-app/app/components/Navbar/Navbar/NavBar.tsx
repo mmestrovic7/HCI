@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,8 +15,13 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   const pathname = usePathname();
   const sanitizedPathname = pathname.substring(1);
   const firstSlashIndex = sanitizedPathname.indexOf("/");
+  let mobileOS = "unknown";
+  useEffect(() => {
+     mobileOS = getMobileOperatingSystem();
+    console.log(`Mobile Operating System: ${mobileOS}`);
+  }, []);
   let logo="/hslogo";
-  if(getMobileOperatingSystem()==="iOS"){
+  if(mobileOS==="iOS"){
     logo+=".png";
   }
   else{

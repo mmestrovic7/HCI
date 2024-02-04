@@ -24,9 +24,11 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
   let logo = "/hslogo2";
   let height = 51;
+  let width= 373;
   if (mobileOS === "iOS") {
     logo += ".png";
-    height = 30;
+    height = 20;
+    width = 148;
   } else {
     logo += ".svg";
   }
@@ -53,7 +55,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
         <Image
           className="nav-logo"
           src={logo}
-          width={373}
+          width={width}
           height={height}
           alt="Navbar logo"
         />

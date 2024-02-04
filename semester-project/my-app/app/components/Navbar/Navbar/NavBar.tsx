@@ -23,12 +23,11 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   }, []); // Empty dependency array means useEffect runs once after initial render
 
   let logo = "/hslogo2";
-  let height = 51;
-  let width= 373;
+  let height = 31;
+  let width= 200;
   if (mobileOS === "iOS") {
     logo += ".png";
-    height = 10;
-    width = 170;
+
   } else {
     logo += ".svg";
   }
@@ -51,7 +50,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   return (
     <nav className="navbar">
 
-      <Link href="/" onClick={() => handleItemClick("home")}>
+      <Link href="/" onClick={() => handleItemClick("home")} className="link">
         <Image
           className="nav-logo"
           src={logo}

@@ -20,7 +20,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
      mobileOS = getMobileOperatingSystem();
     console.log(`Mobile Operating System: ${mobileOS}`);
   }, []);
-  let logo="/hslogo";
+  let logo="";
   if(mobileOS==="iOS"){
     logo+="/dunkirk.png";
   }

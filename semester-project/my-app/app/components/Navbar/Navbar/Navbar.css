@@ -59,7 +59,10 @@
     .navbar{
       z-index: 2;
     }
-
+    .nav-logo{
+      transform: scale(0.8);
+      padding-left: 0px;
+    }
 
 
   }

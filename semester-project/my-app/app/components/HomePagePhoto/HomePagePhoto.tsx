@@ -6,8 +6,8 @@ import { getMobileOperatingSystem } from "@/app/os";
 const HomePagePhoto: React.FC = () => {
   let src = '/harryHERO';
   const alt = 'image1';
-  let width = 554;
-  let height = 911.413;
+  const width = 554;
+  const height = 911.413;
   const [mobileOS, setMobileOS] = useState<string>("unknown");
   useEffect(() => {
     // Use setMobileOS to update the state
@@ -16,8 +16,6 @@ const HomePagePhoto: React.FC = () => {
 
   if (mobileOS === "iOS") {
     src += ".png";
-    height=750;
-    width=554;
   } else {
     src += ".svg";
   }

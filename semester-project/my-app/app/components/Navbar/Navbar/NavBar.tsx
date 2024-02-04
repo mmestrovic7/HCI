@@ -51,8 +51,8 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
         <Image
           className="nav-logo"
           src={logo}
-          width={373}
-          height={51}
+          width={370}
+          height={62}
           alt="Navbar logo"
         />
       </Link>

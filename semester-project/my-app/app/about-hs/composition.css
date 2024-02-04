@@ -1,5 +1,4 @@
-
-.intro{
+.intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,11 +14,10 @@
   padding-bottom: 0;
 }
 
-
 .description {
-  margin: 20px 0px 20px 0px; 
+  margin: 20px 0px 20px 0px;
   text-align: center;
-  width:45%;
+  width: 45%;
 }
 
 .clickToListen {
@@ -37,34 +35,30 @@
   gap: 10px;
   width: 100vw;
   padding: 0;
+  /* border-color: red;
+  border-width: 5px; */
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:50px;
-    padding:40px;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+  align-items: center;
 }
 .container:nth-child(odd) {
-  background-color: var(
-    --darker-background
-  ); 
-  
+  background-color: var(--darker-background);
 }
 
 .container:nth-child(even) {
-  background-color: var(
-    --background-rgb
-  ); 
+  background-color: var(--background-rgb);
   flex-direction: row-reverse;
 }
-.container:nth-child(even)>.basic-info{
+.container:nth-child(even) > .basic-info {
   align-items: flex-end;
 }
-.container:nth-child(odd)>.content{
+.container:nth-child(odd) > .content {
   text-align: right;
 }
 .basic-info {
@@ -73,14 +67,14 @@
   align-items: flex-start;
   margin-top: 20px;
   margin-bottom: 20px;
-  width:320px;
+  width: 320px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width:320px;
+  width: 320px;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -88,7 +82,7 @@
   /* border-color: rebeccapurple;
       border-width: 10px; */
 }
-.lite{
+.lite {
   font-weight: 400;
 }
 
@@ -110,24 +104,33 @@
 .photo {
   border-radius: 10%;
 }
-.ttText{
-  padding:0px;
+.ttText {
+  padding: 0px;
 }
-.tt{
-  padding-bottom:20px;
+.tt {
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 1500px){
+  .container{
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .container,.container:nth-child(even) {
+  .container,
+  .container:nth-child(even) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border-color: red;
-          border-width: 5px; */  
+    border-width: 5px;
+    flex-grow: 1; */
     gap: 5px;
+    max-width: 100%;
   }
-  .container:nth-child(even)>.basic-info{
+
+  .container:nth-child(even) > .basic-info {
     align-items: center;
   }
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Navbar.css"; // Import your CSS module
 import Hamburger from "../../Hamburger/Hamburger";
-import { Console } from "console";
+import { getMobileOperatingSystem } from "@/app/os";
 
 interface NavbarProps {
   pages: { [key: string]: string };
@@ -15,6 +15,14 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   const pathname = usePathname();
   const sanitizedPathname = pathname.substring(1);
   const firstSlashIndex = sanitizedPathname.indexOf("/");
+  let logo="/hslogo";
+  if(getMobileOperatingSystem()==="iOS"){
+    logo+=".png";
+  }
+  else{
+    logo+=".svg";
+  }
+
 
   // If a slash is found, extract the substring up to that index; otherwise, keep the entire string.
   const path =
@@ -37,7 +45,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
       <Link href="/" onClick={() => handleItemClick("home")}>
         <Image
           className="nav-logo"
-          src="/hslogo2 1.svg"
+          src={logo}
           width={373}
           height={51}
           alt="Navbar logo"

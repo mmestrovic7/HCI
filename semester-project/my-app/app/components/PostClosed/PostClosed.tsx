@@ -31,7 +31,7 @@ const PostClosed: React.FC<PostProps> = ({ title, location, date, rating, open }
 
   return (
     <div className={postClass}>
-      <h1 className="title">{title}</h1>
+      <h1 className="postTitle">{title}</h1>
       <div className="subFlex">
         <div>
           {location} <br />

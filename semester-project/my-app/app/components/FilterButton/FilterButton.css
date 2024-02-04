@@ -11,21 +11,21 @@
   font-family: "Dela Gothic One", sans-serif;
   font-size: 15px;
 }
-.red:hover{
-background-color: var(--navbar-component-default);
+.red:hover {
+  background-color: var(--navbar-component-default);
 }
-.blue:hover{
-background-color: rgb(179, 247, 238);
+.blue:hover {
+  background-color: rgb(179, 247, 238);
 }
-.orange:hover{
-background-color: rgb(250, 250, 174);
-  }
+.orange:hover {
+  background-color: rgb(250, 250, 174);
+}
 
 .blue {
- color: var(--blue);
+  color: var(--blue);
 }
 .red {
- color: var(--red);
+  color: var(--red);
 }
 .orange {
   color: var(--orange);
@@ -37,13 +37,13 @@ background-color: rgb(250, 250, 174);
   color: var(--post-background);
 }
 .filter-button.inverted.red {
-    background-color: var(--red);
-}   
+  background-color: var(--red);
+}
 .filter-button.inverted.orange {
-    background-color: var(--orange);
+  background-color: var(--orange);
 }
 .filter-button.inverted.blue {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 .heart-icon {
   padding: 4.5px 3.5px 0px 3.5px;
@@ -53,4 +53,11 @@ background-color: rgb(250, 250, 174);
 }
 .num {
   width: 21.23px;
+}
+@media screen and (max-width: 1000px) {
+  .red:hover,
+  .blue:hover,
+  .orange:hover {
+    background-color: var(--post-background);
+  }
 }

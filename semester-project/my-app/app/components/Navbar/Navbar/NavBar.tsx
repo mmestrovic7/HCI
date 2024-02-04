@@ -27,8 +27,8 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   let width= 373;
   if (mobileOS === "iOS") {
     logo += ".png";
-    height = 20;
-    width = 148;
+    height = 10;
+    width = 170;
   } else {
     logo += ".svg";
   }

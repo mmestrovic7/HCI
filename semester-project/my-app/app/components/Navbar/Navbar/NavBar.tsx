@@ -17,17 +17,17 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   const firstSlashIndex = sanitizedPathname.indexOf("/");
   // State for mobileOS
   const [mobileOS, setMobileOS] = useState<string>("unknown");
-
+  const initialLogo=true;
   useEffect(() => {
     // Use setMobileOS to update the state
     setMobileOS(getMobileOperatingSystem());
   }, []); // Empty dependency array means useEffect runs once after initial render
 
-  let logo = "";
+  let logo = "/hslogo";
   if (mobileOS === "iOS") {
-    logo += "/dunkirk.png";
+    logo += ".png";
   } else {
-    logo += "/hslogo.svg";
+    logo += ".svg";
   }
 
   // If a slash is found, extract the substring up to that index; otherwise, keep the entire string.

@@ -23,8 +23,10 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   }, []); // Empty dependency array means useEffect runs once after initial render
 
   let logo = "/hslogo2";
+  let height = 51;
   if (mobileOS === "iOS") {
     logo += ".png";
+    height = 30;
   } else {
     logo += ".svg";
   }
@@ -52,7 +54,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
           className="nav-logo"
           src={logo}
           width={373}
-          height={51}
+          height={height}
           alt="Navbar logo"
         />
       </Link>

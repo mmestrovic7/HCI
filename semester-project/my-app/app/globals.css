@@ -217,6 +217,11 @@ p{
     margin-right: 0;
     position: relative;
   }
+
+  .h1homePage{
+    padding-bottom: 0px;
+    margin-top: 30px;
+  }
   .homePagePhotos {
     display: flex;
     justify-content: space-between;
@@ -229,6 +234,10 @@ p{
   .finalHeroSection2 {
     z-index: 1;
     width: 140%;
+  }
+
+  .finalHeroSection3 h2{
+    text-align: center;
   }
   .heroSection2Photos {
     display: flex;

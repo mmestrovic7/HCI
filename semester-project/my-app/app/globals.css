@@ -198,7 +198,7 @@ p{
 /*mobile*/
 @media only screen and (max-width: 1000px) {
   h2{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .hideOnPhone{
@@ -239,7 +239,7 @@ p{
     width: 140%;
   }
  .finalHeroSection3 {
-    padding: 20px;
+    padding: 0px;
     padding-top: 50px;
   }
   .finalHeroSection3 h2{
@@ -260,7 +260,7 @@ p{
   flex-direction: column;
  }
  .fanExperiencesText{
-  width:100%;
+  width:80%;
  }
  .fanExperiencePhoto{
   display:none;

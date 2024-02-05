@@ -13,13 +13,12 @@ function Home() {
       <div className="intro tt">
         <h1 className="mainTitle">FAN PROJECTS</h1>
         <p className="description">
-  Welcome to the world of fan projects where fans come together to create unforgettable moments. 
-   From colorful displays to spontaneous surprises, each project adds a special touch to the concert experience. 
-   Join in the excitement, discover the stories behind these projects, 
-   and watch some fun videos to get a taste of the magic!
-</p>
-
-
+          Welcome to the world of fan projects where fans come together to
+          create unforgettable moments! From colorful displays to spontaneous
+          surprises, each project adds a special touch to the concert
+          experience. Join in the excitement, discover the stories behind these
+          projects, and watch some fun videos to get a taste of the magic ✨🎉🎶
+        </p>
       </div>
 
       <div className="mainContainer">
@@ -33,7 +32,7 @@ function Home() {
               It became a Love on Tour tradition to make a sea of rainbow
               lights. Its a fan organised project where people give out stickers
               to put on the flasghlights. The color of the sticker is different
-              for each sector.
+              for each sector 🌈✨
             </p>
           </div>
         </div>
@@ -43,11 +42,12 @@ function Home() {
             <TikTok src={tikTokVideopath2} />
           </div>
           <div className="content lite">
-            <h1 className="subTitle">HEART BALOON</h1>
+            <h1 className="subTitle">HEART BALLOON</h1>
             <p className="ttText">
               Once a fan let go of the heart balloon during the concert. Harry
               posted the picture of the baloon to his Instagram story making it
-              an iconic tour moment. It also became a trend for future concerts!
+              an iconic tour moment. It also became a trend for future concerts
+              to bring these balloons ❤️🎈
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ function Home() {
               Finding the path to the concert is quite easy, just follow the
               feathers! Feather boas, cowboy hats, sparkles, pink, and other
               campy fashion choices are part of your classic Love On Tour
-              outfit!
+              outfit 🕺🎉
             </p>
           </div>
         </div>

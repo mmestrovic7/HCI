@@ -4,10 +4,10 @@
 *dodati filtriranje postova
 *napraviti carousel
 *zvjezdice
-*import png
 
-PROBLEMI:
-*iphone: svg 
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
-EMPTY
+*riješen svg problem na iphone-u
+*dodane komponente za poboljšanje urednosti
+*napredak s css-om
+

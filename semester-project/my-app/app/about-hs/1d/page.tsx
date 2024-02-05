@@ -100,24 +100,13 @@ function Home() {
         </div>
 
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">FOUR</h1>
-            <div className="photo">
-              <a
-                href="https://www.youtube.com/playlist?list=OLAK5uy_k4LFwctseSNnXT0MyeNB1j9boPLFjO-ZI"
-                target="blank"
-              >
-                <Image
-                  src="/four.svg"
-                  alt="imageFour"
-                  width={220}
-                  height={220}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2014.</p>
-          </div>
+          <Album
+            title="FOUR"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_k4LFwctseSNnXT0MyeNB1j9boPLFjO-ZI"
+            imageSrc="/four.svg"
+            imageAlt="imageFour"
+            year="2014."
+          />
 
           <ul className="content">
             <li>1. Steal My Girl</li>
@@ -140,24 +129,13 @@ function Home() {
         </div>
 
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">MADE IN THE A.M.</h1>
-            <div className="photo">
-              <a
-                href="https://www.youtube.com/playlist?list=OLAK5uy_kng4OEgFEJ1lxWRj7wjxewLbSAu6vmzzE"
-                target="blank"
-              >
-                <Image
-                  src="/madeInTheAm.svg"
-                  alt="imagemadeInTheAm"
-                  width={220}
-                  height={220}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2015.</p>
-          </div>
+          <Album
+            title="MADE IN THE A.M."
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_kng4OEgFEJ1lxWRj7wjxewLbSAu6vmzzE"
+            imageSrc="/madeInTheAm.svg"
+            imageAlt="imagemadeInTheAm"
+            year="2015."
+          />
 
           <ul className="content">
             <li>1. Hey Angel</li>

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import CustomButton from '../components/CustomButton/CustomButton';
-import Footer from '../components/Footer/Footer';
+import '../about-hs/abouths.css'
 import "./fans.css"
 function Home() {
   return (
     <main>
-      <h1 className='title'>FAN ACTIVITIES</h1>
+      <h1 className='abouths-title'>FAN ACTIVITIES</h1>
         <div className='subpageElements'>
           <ul className = 'experiences-text'>
             <p>Read fan stories! Click 'Experiences' to explore Love on Tour through fans' eyes. 🌟

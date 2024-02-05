@@ -117,6 +117,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .mainTitle{
+    font-size: 25px;
+  }
   .container,
   .container:nth-child(even) {
     display: flex;

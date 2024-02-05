@@ -162,8 +162,8 @@ p{
 
   width: 30%;
   align-self: center;
+ 
 }
-
 .fanExperiencePhoto {
   padding-left: 20px;
 }
@@ -197,6 +197,9 @@ p{
 
 /*mobile*/
 @media only screen and (max-width: 1000px) {
+  h2{
+    font-size: 20px;
+  }
 
   .hideOnPhone{
     display: none;

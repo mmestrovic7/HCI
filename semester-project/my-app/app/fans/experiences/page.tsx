@@ -9,11 +9,24 @@ import "../../composition.css"
 import Posts from "@/app/components/Posts/Posts";
 export default async function Post() {
   const posts = await getPostsFromContentful(); 
-
   return (
     <main>
       <h1 className="mainTitle">FAN EXPERIENCES</h1>
-     <Posts posts={posts} />
+      <ul className="posts">
+        {posts.map((post) => (
+          <li key={post.sys.id}>
+            <Link href={`experiences/${post.sys.id}`}>
+              <PostClosed
+                title={post.fields.title}
+                rating={post.fields.rating}
+                location={post.fields.location}
+                date={post.fields.date}
+                open={false}
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }

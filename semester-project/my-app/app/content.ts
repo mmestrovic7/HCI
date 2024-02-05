@@ -1,6 +1,7 @@
 import { createClient } from "contentful";
 
 export interface Post {
+  contentTypeId:string;
   sys: {
     id: string;
   };

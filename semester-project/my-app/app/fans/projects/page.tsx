@@ -14,7 +14,9 @@ function Home() {
         <h1 className="mainTitle">FAN PROJECTS</h1>
         <p className="description">
           Welcome to the world of fan projects where fans come together to
-          create unforgettable moments!🌟 <br/>From colorful displays to spontaneous
+          create unforgettable moments!🌟 <br/>
+          <br/>
+          From colorful displays to spontaneous
           surprises, each project adds a special touch to the concert
           experience. Join in the excitement, discover the stories behind these
           projects, and watch some fun videos to get a taste of the magic ✨🎉🎶

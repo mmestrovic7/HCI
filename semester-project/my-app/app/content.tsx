@@ -31,5 +31,3 @@ export const getGalleryEntriesFromContentful = async () => {
 
   return {props: { photos: response.items }};
 };
-let cachedPosts = getPostsFromContentful;
-export { cachedPosts };

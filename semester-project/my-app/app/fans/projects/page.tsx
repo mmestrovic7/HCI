@@ -22,7 +22,7 @@ function Home() {
       </div>
 
       <div className="mainContainer">
-        <div className="container">
+        <div className="container project">
           <div className="basic-info">
             <TikTok src={tikTokVideopath1} />
           </div>
@@ -37,7 +37,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container project">
           <div className="basic-info">
             <TikTok src={tikTokVideopath2} />
           </div>
@@ -52,7 +52,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container project">
           <div className="basic-info">
             <TikTok src={tikTokVideopath3} />
           </div>

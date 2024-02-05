@@ -39,7 +39,7 @@
   border-width: 5px; */
 }
 
-.container {
+.container,.project {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,6 +131,9 @@
     flex-grow: 1; */
     gap: 5px;
     max-width: 100%;
+  }
+  .container.project{
+    flex-direction: column-reverse;
   }
 
   .container:nth-child(even) > .basic-info {

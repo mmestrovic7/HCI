@@ -238,7 +238,10 @@ p{
     z-index: 1;
     width: 140%;
   }
-
+ .finalHeroSection3 {
+    padding: 20px;
+    padding-top: 50px;
+  }
   .finalHeroSection3 h2{
     text-align: center;
   }

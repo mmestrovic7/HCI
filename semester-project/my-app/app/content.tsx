@@ -22,9 +22,15 @@ export const getPostsFromContentful = async () => {
   const response = await client.getEntries<Post>({
     content_type: "post",
   });
- 
+
   return response.items;
-  
 };
-let cachedPosts=getPostsFromContentful;
+export const getGalleryEntriesFromContentful = async () => {
+  const response = await client.getEntries({
+    content_type: "gallery",
+  });
+
+  return {props: { photos: response.items }};
+};
+let cachedPosts = getPostsFromContentful;
 export { cachedPosts };

@@ -1,40 +1,32 @@
-import Link from "next/link";
 import "../composition.css";
 import Image from "next/image";
+import Album from "../../components/Album/Album";
 
 function Home() {
   return (
     <main>
       <div className="intro">
-      <h1 className="mainTitle">SOLO CAREER</h1>
-      <p className="description">
-        After One Direction broke off in 2016., Harry Styles has gone on to
-        release three incredible albums. <br />
-        <br />
-        For these albums and songs he got multiple Grammy and BRIT Award wins.<br/>
-      </p>
-      <p className="clickToListen">
-      (YOU CAN CLICK ON ALBUM COVERS TO LISTEN TO HIS ALBUMS)
-      </p>
+        <h1 className="mainTitle">SOLO CAREER</h1>
+        <p className="description">
+          After One Direction broke off in 2016., Harry Styles has gone on to
+          release three incredible albums. <br />
+          <br />
+          For these albums and songs he got multiple Grammy and BRIT Award wins.
+          <br />
+        </p>
+        <p className="clickToListen">
+          (YOU CAN CLICK ON ALBUM COVERS TO LISTEN TO HIS ALBUMS)
+        </p>
       </div>
       <div className="mainContainer">
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">HARRY STYLES</h1>
-
-            <div className="photo">
-              <a href="https://www.youtube.com/playlist?list=OLAK5uy_k684NFAsh5fX2ksemLQoP4Uy8IEc_PThg" target="_blank">
-                <Image
-                  src="/harrystyles_cover.svg"
-                  alt="imageHScover"
-                  width={200}
-                  height={200}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2017.</p>
-          </div>
+          <Album
+            title="HARRY STYLES"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_k684NFAsh5fX2ksemLQoP4Uy8IEc_PThg"
+            imageSrc="/harrystyles_cover.svg"
+            imageAlt="imageHScover"
+            year="2017."
+          />
           <ul className="content">
             <li>1. Meet Me in the Hallway</li>
             <li>2. Sign of the Times</li>
@@ -50,21 +42,13 @@ function Home() {
         </div>
 
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">FINE LINE</h1>
-            <div className="photo">
-              <a href="https://www.youtube.com/playlist?list=OLAK5uy_l-oeXy89ZqIF0Dw3adjIVcpTKpj_diYNY" target="_blank">
-                <Image
-                  src="/fineline_cover.svg"
-                  alt="imageFineline"
-                  width={200}
-                  height={200}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2019.</p>
-          </div>
+          <Album
+            title="FINE LINE"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_l-oeXy89ZqIF0Dw3adjIVcpTKpj_diYNY"
+            imageSrc="/fineline_cover.svg"
+            imageAlt="imageFineLine"
+            year="2019."
+          />
           <ul className="content">
             <li>1. Golden</li>
             <li>2. Watermelon Sugar</li>
@@ -82,21 +66,13 @@ function Home() {
         </div>
 
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">HARRY'S HOUSE</h1>
-            <div className="photo">
-              <a href="https://www.youtube.com/playlist?list=OLAK5uy_mlz0XdHjgFO8gVxdQD94aCHsEfpUlgJJ0" target="blank">
-                <Image
-                  src="/harryshouse_cover.svg"
-                  alt="imageHarryshouse"
-                  width={200}
-                  height={200}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2022.</p>
-          </div>
+          <Album
+            title="HARRY'S HOUSE"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_mlz0XdHjgFO8gVxdQD94aCHsEfpUlgJJ0"
+            imageSrc="/harryshouse_cover.svg"
+            imageAlt="imageHarryshouse"
+            year="2022."
+          />
 
           <ul className="content">
             <li>1. Music for a Sushi Restaurant</li>

@@ -1,44 +1,33 @@
 import Image from "next/image";
-import Link from "next/link";
+import Album from "@/app/components/Album/Album";
 import "../composition.css";
 function Home() {
   return (
     <main>
       <div className="intro">
-      <h1 className="mainTitle">ONE DIRECTION</h1>
-      <p className="description">
-        One Direction, formed on the British television show "The X Factor" in
-        2010, swiftly became a global phenomenon with their infectious pop
-        sound. <br />
-        <br />
-        The band's meteoric rise led to widespread acclaim and numerous awards,
-        including Grammys and BRITs, solidifying their status as one of the most
-        successful boy bands.
-      </p>
-      <p className="clickToListen">
-        (YOU CAN CLICK ON ALBUM COVERS TO LISTEN TO THEIR ALBUMS)
-      </p>
+        <h1 className="mainTitle">ONE DIRECTION</h1>
+        <p className="description">
+          One Direction, formed on the British television show "The X Factor" in
+          2010, swiftly became a global phenomenon with their infectious pop
+          sound. <br />
+          <br />
+          The band's meteoric rise led to widespread acclaim and numerous
+          awards, including Grammys and BRITs, solidifying their status as one
+          of the most successful boy bands.
+        </p>
+        <p className="clickToListen">
+          (YOU CAN CLICK ON ALBUM COVERS TO LISTEN TO THEIR ALBUMS)
+        </p>
       </div>
       <div className="mainContainer">
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">UP ALL NIGHT</h1>
-            <div className="photo">
-              <a
-                href="https://www.youtube.com/playlist?list=OLAK5uy_kPecePAIWHnM9rT-phtHGAXE1rkyPO8K0"
-                target="_blank"
-              >
-                <Image
-                  src="/upAllNight.svg"
-                  alt="imageUpAllNight"
-                  width={220}
-                  height={220}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2011.</p>
-          </div>
+          <Album
+            title="UP ALL NIGHT"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_kPecePAIWHnM9rT-phtHGAXE1rkyPO8K0"
+            imageSrc="/upAllNight.svg"
+            imageAlt="imageUpAllNight"
+            year="2011."
+          />
           <ul className="content">
             <li>1. What Makes You Beautiful</li>
             <li>2. Gotta Be You</li>
@@ -59,24 +48,13 @@ function Home() {
         </div>
 
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">TAKE ME HOME</h1>
-            <div className="photo">
-              <a
-                href="https://www.youtube.com/playlist?list=OLAK5uy_nQz3HzBO4sNwnQEi91RTS9iB4eketqrPs"
-                target="_blank"
-              >
-                <Image
-                  src="/takeMeHome.svg"
-                  alt="imageTakeMeHome"
-                  width={220}
-                  height={220}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2012.</p>
-          </div>
+          <Album
+            title="TAKE ME HOME"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_nQz3HzBO4sNwnQEi91RTS9iB4eketqrPs"
+            imageSrc="/takeMeHome.svg"
+            imageAlt="imageTakeMeHome"
+            year="2012."
+          />
           <ul className="content">
             <li>1. Live While We're Young</li>
             <li>2. Kiss You</li>
@@ -95,24 +73,13 @@ function Home() {
         </div>
 
         <div className="container">
-          <div className="basic-info">
-            <h1 className="subTitle">MIDNIGHT MEMORIES</h1>
-            <div className="photo">
-              <a
-                href="https://www.youtube.com/playlist?list=OLAK5uy_k-fR8UG9108cSGptPFWTQpRabw7Kyzc5c"
-                target="blank"
-              >
-                <Image
-                  src="/midnightMemories.svg"
-                  alt="imageMidnightMmeories"
-                  width={220}
-                  height={220}
-                  priority
-                />
-              </a>
-            </div>
-            <p className="year">2013.</p>
-          </div>
+          <Album
+            title="MIDNIGHT MEMORIES"
+            playlistLink="https://www.youtube.com/playlist?list=OLAK5uy_k-fR8UG9108cSGptPFWTQpRabw7Kyzc5c"
+            imageSrc="/midnightMemories.svg"
+            imageAlt="imageMidnightMemories"
+            year="2013."
+          />
 
           <ul className="content">
             <li>1.Best Song Ever</li>

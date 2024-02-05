@@ -13,7 +13,7 @@ function Home() {
         
         <div className="landing1D-text">
           <img
-            src="fetus_harry.svg"
+            src="fetus_harry.png"
             alt="imageFetus"
             width={225}
             height={400}
@@ -31,7 +31,7 @@ function Home() {
 
         <div className="landing1D-text">
           <img
-            src="harry_grammy.svg"
+            src="harry_grammy.png"
             alt="imageGrammy"
             width={225}
             height={400}

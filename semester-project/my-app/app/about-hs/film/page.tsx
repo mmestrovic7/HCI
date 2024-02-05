@@ -63,7 +63,7 @@ function Home() {
                 target="_blank"
               >
                 <Image
-                  src="/myPoliceman_poster.svg"
+                  src="/myPoliceman_poster.png"
                   alt="imageMyPoliceman"
                   width={204}
                   height={300}

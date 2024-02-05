@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from 'react';
-import Link from 'next/link';
-import PostClosed from '@/app/components/PostClosed/PostClosed';
-import FilterButton from '@/app/components/FilterButton/FilterButton';
-import { Post } from '@/app/content';
-import '../../composition.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import PostClosed from "@/app/components/PostClosed/PostClosed";
+import FilterButton from "@/app/components/FilterButton/FilterButton";
+import { Post } from "@/app/content";
+import "../../composition.css";
+import "../../fans/experiences/experiences.css";
 
 interface ExperiencesProps {
   posts: Post[];
@@ -15,7 +16,9 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
   const [posts, setPosts] = useState<Post[]>(initialPosts); // Store posts in state
 
   const filterPostsByYear = (year: number) => {
-    const filteredPosts = initialPosts.filter(post => new Date(post.fields.date).getFullYear() === year);
+    const filteredPosts = initialPosts.filter(
+      (post) => new Date(post.fields.date).getFullYear() === year
+    );
     setPosts(filteredPosts);
   };
 
@@ -32,30 +35,45 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
 
     // Filter posts based on the year
     switch (number) {
-      case '1':
-        console.log('Red Filter Button Clicked - Posts from 2021');
+      case "1":
+        console.log("Red Filter Button Clicked - Posts from 2021");
         filterPostsByYear(2021);
         break;
-      case '2':
-        console.log('Blue Filter Button Clicked - Posts from 2022');
+      case "2":
+        console.log("Blue Filter Button Clicked - Posts from 2022");
         filterPostsByYear(2022);
         break;
-      case '3':
-        console.log('Orange Filter Button Clicked - Posts from 2023');
+      case "3":
+        console.log("Orange Filter Button Clicked - Posts from 2023");
         filterPostsByYear(2023);
         break;
       default:
-        console.log('Unknown Filter Button Clicked');
+        console.log("Unknown Filter Button Clicked");
         setPosts(initialPosts); // Reset to original posts
     }
   };
 
   return (
-    <main>
+    <div>
       <div className="filter-buttons">
-        <FilterButton color="red" number="1" onClick={() => handleFilterButtonClick('red', '1')} isActive={activeButton === 'red'} />
-        <FilterButton color="blue" number="2" onClick={() => handleFilterButtonClick('blue', '2')} isActive={activeButton === 'blue'} />
-        <FilterButton color="orange" number="3" onClick={() => handleFilterButtonClick('orange', '3')} isActive={activeButton === 'orange'} />
+        <FilterButton
+          color="red"
+          number="1"
+          onClick={() => handleFilterButtonClick("red", "1")}
+          isActive={activeButton === "red"}
+        />
+        <FilterButton
+          color="blue"
+          number="2"
+          onClick={() => handleFilterButtonClick("blue", "2")}
+          isActive={activeButton === "blue"}
+        />
+        <FilterButton
+          color="orange"
+          number="3"
+          onClick={() => handleFilterButtonClick("orange", "3")}
+          isActive={activeButton === "orange"}
+        />
       </div>
       <ul className="posts">
         {posts.map((post) => (
@@ -72,7 +90,7 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 };
 

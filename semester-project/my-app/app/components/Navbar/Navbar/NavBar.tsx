@@ -35,6 +35,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   }, []);
 
   logo = checkIfIOS(mobileOS, logo);
+  console.log(logo);
 
   const handleItemClick = (name: string) => {
     setSelectedNavItem(name);

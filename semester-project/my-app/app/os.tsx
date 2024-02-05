@@ -17,7 +17,8 @@ export function getMobileOperatingSystem() {
 export function checkIfIOS(mobileOS: string, path: string): string{
     if (mobileOS === "iOS") {
         path += ".png";
-    } else {
+    } 
+    else {
         path += ".svg";
     }
 

@@ -14,7 +14,6 @@ export interface PostVercel {
   };
 }
 export interface Post {
-
   sys: {
     id: string;
   };
@@ -24,6 +23,21 @@ export interface Post {
     location: string;
     rating: number;
     post: string;
+  };
+}
+export interface GalleryEntry {
+  sys: {
+    id: string;
+  };
+  fields: {
+    photo:{
+      url: string;
+      height: number;
+      width: number;
+    }
+    date: string;
+    location: string;
+
   };
 }
 const client = createClient({
@@ -42,5 +56,5 @@ export const getGalleryEntriesFromContentful = async () => {
     content_type: "gallery",
   });
 
-  return {props: { photos: response.items }};
+  return response.items;  
 };

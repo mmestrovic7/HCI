@@ -1,7 +1,4 @@
 
-import Link from "next/link";
-import PostClosed from "@/app/components/PostClosed/PostClosed";
-import FilterButton from "@/app/components/FilterButton/FilterButton";
 import "./experiences.css";
 import { Post } from "@/app/content";
 import { getPostsFromContentful} from "@/app/content";  
@@ -10,7 +7,8 @@ import Posts from "@/app/components/Posts/Posts";
 export default async function Post() {
   const posts = await getPostsFromContentful(); 
   return (
-    <main>
+    <main className="page">
+
       <h1 className="mainTitle">FAN EXPERIENCES</h1>
       <Posts posts={posts} />
     </main>

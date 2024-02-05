@@ -19,7 +19,7 @@ function Home() {
         recognition for his talents in both domains.
       </p>
       <p className="clickToListen">
-        (YOU CAN CLICK ON FILM POSTERS TO CHECK THEIR RATINGS ON IMDb)
+        (YOU CAN CLICK ON FILM POSTERS TO CHECK THEIR IMDb pages)
       </p>
       </div>
       <div className="mainContainer">

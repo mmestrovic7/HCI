@@ -7,13 +7,15 @@ import "./FilterButton.css";
 interface FilterButtonProps {
   color: string;
   number: string;
+  onClick: () => void; // Add the onClick prop
 }
 
-const FilterButton: React.FC<FilterButtonProps> = ({ color, number }) => {
+const FilterButton: React.FC<FilterButtonProps> = ({ color, number, onClick }) => {
   const [isInverted, setIsInverted] = useState(false);
 
   const handleClick = () => {
     setIsInverted(!isInverted);
+    onClick(); // Call the onClick prop when the button is clicked
   };
 
   const buttonClassName = `filter-button ${color ? color : ""} ${

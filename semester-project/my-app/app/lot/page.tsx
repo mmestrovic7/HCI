@@ -1,12 +1,10 @@
 import '../globals.css'
-import { getGalleryEntriesFromContentful } from '../content';
-import "../composition.css";
+import "../about-hs/abouths.css";
 
 export default async function Gallery() {
-  const photos = await getGalleryEntriesFromContentful();
   return (
     <main>
-      <h1>LOVE ON TOUR GALLERY</h1>
+      <h1 className='abouths-title'>LOVE ON TOUR GALLERY</h1>
 
     </main>
   )

@@ -12,21 +12,7 @@ export default async function Post() {
   return (
     <main>
       <h1 className="mainTitle">FAN EXPERIENCES</h1>
-      <ul className="posts">
-        {posts.map((post) => (
-          <li key={post.sys.id}>
-            <Link href={`experiences/${post.sys.id}`}>
-              <PostClosed
-                title={post.fields.title}
-                rating={post.fields.rating}
-                location={post.fields.location}
-                date={post.fields.date}
-                open={false}
-              />
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <Posts posts={posts} />
     </main>
   );
 }

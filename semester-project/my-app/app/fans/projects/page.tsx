@@ -1,7 +1,7 @@
 import Footer from "@/app/components/Footer/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import "../../about-hs/composition.css";
+import "../../composition.css";
 import React from "react";
 import TikTok from "@/app/components/TikTok/TikTok";
 function Home() {

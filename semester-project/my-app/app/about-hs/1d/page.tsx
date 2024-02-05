@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Album from "@/app/components/Album/Album";
-import "../composition.css";
+import "../../composition.css";
 function Home() {
   return (
     <main>

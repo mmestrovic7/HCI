@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'; 
-import "../../about-hs/composition.css";
+import "../../composition.css";
 
 interface AlbumProps {
   title: string;

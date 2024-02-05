@@ -1,5 +1,6 @@
 import '../globals.css'
 import { getGalleryEntriesFromContentful } from '../content';
+import "../composition.css";
 
 export default async function Gallery() {
   const photos = await getGalleryEntriesFromContentful();

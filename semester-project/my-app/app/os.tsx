@@ -14,3 +14,12 @@ export function getMobileOperatingSystem() {
 
     return "unknown";
 }
+export function checkIfIOS(mobileOS: string, path: string): string{
+    if (mobileOS === "iOS") {
+        path += ".png";
+    } else {
+        path += ".svg";
+    }
+
+    return path; // Return the modified path
+}

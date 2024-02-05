@@ -5,7 +5,7 @@ import FilterButton from "@/app/components/FilterButton/FilterButton";
 import "./experiences.css";
 import { Post } from "@/app/content";
 import { getPostsFromContentful} from "@/app/content";  
-import "../../about-hs/composition.css"
+import "../../composition.css"
 export default async function Post() {
   const posts = await getPostsFromContentful(); 
 

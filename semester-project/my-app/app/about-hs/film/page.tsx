@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import "../composition.css";
+import "../../composition.css";
 
 function Home() {
   return (

@@ -1,11 +1,11 @@
 "use client";
-import React from 'react';
-import { useEffect,useState } from 'react';
-import { getMobileOperatingSystem } from "@/app/os";
+import React from "react";
+import { useEffect, useState } from "react";
+import { getMobileOperatingSystem, checkIfIOS } from "@/app/os";
 
 const HomePagePhoto: React.FC = () => {
-  let src = '/harryHERO';
-  const alt = 'image1';
+  let src = "/harryHERO";
+  const alt = "image1";
   const width = 554;
   const height = 911.413;
   const [mobileOS, setMobileOS] = useState<string>("unknown");
@@ -14,19 +14,8 @@ const HomePagePhoto: React.FC = () => {
     setMobileOS(getMobileOperatingSystem());
   }, []); // Empty dependency array means useEffect runs once after initial render
 
-  if (mobileOS === "iOS") {
-    src += ".png";
-  } else {
-    src += ".svg";
-  }
-  return (
-      <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-      />
-  );
+  src = checkIfIOS(mobileOS, src);
+  return <img src={src} alt={alt} width={width} height={height} />;
 };
 
 export default HomePagePhoto;

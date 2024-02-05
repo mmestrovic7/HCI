@@ -1,4 +1,4 @@
-import "../composition.css";
+import "../../composition.css";
 import Image from "next/image";
 import Album from "../../components/Album/Album";
 

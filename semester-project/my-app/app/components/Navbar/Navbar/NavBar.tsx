@@ -3,45 +3,38 @@ import React, { FC, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "./Navbar.css"; // Import your CSS module
+import "./Navbar.css";
 import Hamburger from "../../Hamburger/Hamburger";
-import { getMobileOperatingSystem } from "@/app/os";
+import { getMobileOperatingSystem, checkIfIOS } from "@/app/os";
 
 interface NavbarProps {
   pages: { [key: string]: string };
 }
 
-const Navbar: FC<NavbarProps> = ({ pages }) => {
-  const pathname = usePathname();
+const extractPath = (pathname: string): string => {
   const sanitizedPathname = pathname.substring(1);
   const firstSlashIndex = sanitizedPathname.indexOf("/");
-  // State for mobileOS
+  return firstSlashIndex !== -1
+    ? sanitizedPathname.substring(0, firstSlashIndex)
+    : sanitizedPathname;
+};
+
+const Navbar: FC<NavbarProps> = ({ pages }) => {
+  const pathname = usePathname();
   const [mobileOS, setMobileOS] = useState<string>("unknown");
-  useEffect(() => {
-    // Use setMobileOS to update the state
-    setMobileOS(getMobileOperatingSystem());
-  }, []); // Empty dependency array means useEffect runs once after initial render
-
+  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">("");
   let logo = "/hslogo2";
-  let height = 31;
-  let width= 200;
-  if (mobileOS === "iOS") {
-    logo += ".png";
 
-  } else {
-    logo += ".svg";
-  }
+  useEffect(() => {
+    const extractedPath = extractPath(pathname);
+    setSelectedNavItem(extractedPath === "" ? "home" : extractedPath);
+  }, [pathname]);
 
-  // If a slash is found, extract the substring up to that index; otherwise, keep the entire string.
-  const path =
-    firstSlashIndex !== -1
-      ? sanitizedPathname.substring(0, firstSlashIndex)
-      : sanitizedPathname;
+  useEffect(() => {
+    setMobileOS(getMobileOperatingSystem());
+  }, []);
 
-  const [selectedNavItem, setSelectedNavItem] = useState<string | "/">(
-    path === "" ? "home" : path
-  );
-  console.log("Initial pathname:", pathname);
+  logo = checkIfIOS(mobileOS, logo);
 
   const handleItemClick = (name: string) => {
     setSelectedNavItem(name);
@@ -49,13 +42,12 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
   return (
     <nav className="navbar">
-
       <Link href="/" onClick={() => handleItemClick("home")} className="link">
         <Image
           className="nav-logo"
           src={logo}
-          width={width}
-          height={height}
+          width={200}
+          height={31}
           alt="Navbar logo"
         />
       </Link>

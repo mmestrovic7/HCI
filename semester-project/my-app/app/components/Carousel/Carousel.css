@@ -1,0 +1,13 @@
+/* Carousel.css */
+.carousel {
+    max-width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+.carousel-items{
+    display: flex;
+}
+

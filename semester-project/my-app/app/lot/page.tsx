@@ -21,12 +21,3 @@ export default async function Gallery() {
     </main>
   )
 }
-/*     <div className='gallery'>
-        {galleryEntries.map((entry) => {
-          return (
-            <PhotoFrame location='entry.fields.location' date='entry.fields.date' imageSrc='entry.fields.photo' />
-          );
-        }
-        )}
-      </div>*/
-

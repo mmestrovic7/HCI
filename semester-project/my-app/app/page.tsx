@@ -1,8 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 import CustomButton from "./components/CustomButton/CustomButton";
 import HomePagePhoto from "./components/HomePagePhoto/HomePagePhoto";
+import Carousel from "./components/Carousel/Carousel";
 import { getGalleryEntriesFromContentful,GalleryEntry } from "./content";
 
 async function Home() {
@@ -31,26 +29,7 @@ async function Home() {
       <div className="finalHeroSection2">
         <h2>LOVE ON TOUR</h2>
         <div className="heroSection2Photos">
-          <div className="photosToHide">
-            <PhotoFrame
-              location="Slane Castle"
-              date="June 2023"
-              imageSrc="Rectangle 14.svg"
-              key='1'
-            />
-            <PhotoFrame
-              location="Regio Emilia"
-              date="July 2023"
-              imageSrc="Rectangle 13.svg"
-              key='2'
-            />{" "}
-          </div>
-          <PhotoFrame
-            location="New York City"
-            date="XV. September 2023"
-            imageSrc="Rectangle 15.svg"
-            key='3'
-          />
+          <Carousel galleryEntries={galleryEntries} />
         </div>
         <CustomButton text="TOUR GALLERY" href="/lot" />
       </div>

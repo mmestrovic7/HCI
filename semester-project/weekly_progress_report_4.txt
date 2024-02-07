@@ -1,13 +1,13 @@
 ŠTO TREBAMO NAPRAVITI:
 *poboljšati urednost koda
-*galerija
-*dodati filtriranje postova
-*napraviti carousel
 *zvjezdice
-
+*dovršiti galeriju i carousel css
 
 ŠTO SMO OVAJ TJEDAN NAPRAVILE:
 *riješen svg problem na iphone-u
 *dodane komponente za poboljšanje urednosti
 *napredak s css-om
+*dodano filtriranje postova
+*galerija napravljena
+*carousel napravljen
 

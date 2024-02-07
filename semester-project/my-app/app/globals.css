@@ -132,8 +132,7 @@ p{
   width:110%;
   height: 800px;
 }
-.heroSection2Photos,
-.photosToHide {
+.heroSection2Photos{
   display: flex;
   flex-direction: row;
   justify-items: space-evenly;
@@ -208,9 +207,7 @@ p{
     display: block;
 
   }
-  .photosToHide{
-    display: none;
-  }
+
   .h1homePage{
     padding-top: 5px;
   }

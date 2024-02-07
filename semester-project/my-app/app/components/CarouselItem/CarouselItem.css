@@ -1,0 +1,8 @@
+/* CarouselItem.css */
+.item {
+    display: none;
+}
+
+.active-item {
+    display: block;
+}

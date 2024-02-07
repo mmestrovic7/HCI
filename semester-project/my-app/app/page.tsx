@@ -3,8 +3,10 @@ import Link from "next/link";
 import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 import CustomButton from "./components/CustomButton/CustomButton";
 import HomePagePhoto from "./components/HomePagePhoto/HomePagePhoto";
+import { getGalleryEntriesFromContentful,GalleryEntry } from "./content";
 
-function Home() {
+async function Home() {
+  const galleryEntries: GalleryEntry[] = await getGalleryEntriesFromContentful();
   return (
     <main>
       <div className="finalHeroSection">

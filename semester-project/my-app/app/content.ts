@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
 
 export interface PostVercel {
-  contentTypeId:string;
+  contentTypeId: string;
   sys: {
     id: string;
   };
@@ -30,16 +30,22 @@ export interface GalleryEntry {
     id: string;
   };
   fields: {
-    photo:{
-      url: string;
-      height: number;
-      width: number;
-    }
+    photo: Photo;
     date: string;
     location: string;
-
   };
 }
+interface Photo{
+  sys:{
+    id: string;
+  }
+  fields: {
+    file: {
+      url: string;
+    };
+  };
+}
+
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID || "",
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
@@ -52,9 +58,9 @@ export const getPostsFromContentful = async () => {
   return response.items;
 };
 export const getGalleryEntriesFromContentful = async () => {
-  const response = await client.getEntries({
+  const response = await client.getEntries<GalleryEntry>({
     content_type: "gallery",
   });
 
-  return response.items;  
+  return response.items;
 };

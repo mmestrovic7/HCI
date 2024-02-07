@@ -1,16 +1,34 @@
 import '../globals.css'
 import "../about-hs/abouths.css";
-import { getGalleryEntriesFromContentful } from '../content';
-
+import PhotoFrame from '../components/PhotoFrame/PhotoFrame';
+import { getGalleryEntriesFromContentful,GalleryEntry } from '../content';
+import './lot.css';
 export default async function Gallery() {
-  const galleryEntries = await getGalleryEntriesFromContentful();
-  //console.log(galleryEntries);
-  //galleryEntries.forEach((entry) => {console.log(entry.fields.photo)});
+  const galleryEntries: GalleryEntry[] = await getGalleryEntriesFromContentful();
+  console.log(galleryEntries);
+  galleryEntries.forEach((entry) => {console.log(entry.fields.photo.fields)});
+  
   return (
     <main>
       <h1 className='abouths-title'>LOVE ON TOUR GALLERY</h1>
-
+      <div className='gallery'>
+        {galleryEntries.map((entry) => {
+          return (
+            <PhotoFrame location={entry.fields.location} date={entry.fields.date} imageSrc={entry.fields.photo.fields.file.url}/>
+          );
+        }
+        )}
+      </div>
+ 
     </main>
   )
 }
+/*     <div className='gallery'>
+        {galleryEntries.map((entry) => {
+          return (
+            <PhotoFrame location='entry.fields.location' date='entry.fields.date' imageSrc='entry.fields.photo' />
+          );
+        }
+        )}
+      </div>*/
 

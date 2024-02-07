@@ -6,6 +6,7 @@ import "../../composition.css"
 import Posts from "@/app/components/Posts/Posts";
 export default async function Post() {
   const posts = await getPostsFromContentful(); 
+  
   return (
     <main className="page">
 

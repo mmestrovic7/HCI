@@ -7,6 +7,7 @@ interface PhotoFrameProps {
   location: string;
   date: string;
   imageSrc: string;
+  key:string;
 }
 
 const PhotoFrame: React.FC<PhotoFrameProps> = ({
@@ -21,7 +22,7 @@ const PhotoFrame: React.FC<PhotoFrameProps> = ({
         {location}, <br />
         {date}
       </p>
-      <img src={imageSrc}  height={363} width={244} />
+      <img  src={imageSrc}  height={363} width={244}/>
     </div>
   );
 };

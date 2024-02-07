@@ -36,17 +36,20 @@ async function Home() {
               location="Slane Castle"
               date="June 2023"
               imageSrc="Rectangle 14.svg"
+              key='1'
             />
             <PhotoFrame
               location="Regio Emilia"
               date="July 2023"
               imageSrc="Rectangle 13.svg"
+              key='2'
             />{" "}
           </div>
           <PhotoFrame
             location="New York City"
             date="XV. September 2023"
             imageSrc="Rectangle 15.svg"
+            key='3'
           />
         </div>
         <CustomButton text="TOUR GALLERY" href="/lot" />

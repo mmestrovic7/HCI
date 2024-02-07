@@ -14,7 +14,7 @@ export default async function Gallery() {
       <div className='gallery'>
         {galleryEntries.map((entry) => {
           return (
-            <PhotoFrame location={entry.fields.location} date={entry.fields.date} imageSrc={entry.fields.photo.fields.file.url}/>
+            <PhotoFrame location={entry.fields.location} date={entry.fields.date} imageSrc={entry.fields.photo.fields.file.url} key={entry.sys.id}/>
           );
         }
         )}

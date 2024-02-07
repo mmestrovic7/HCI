@@ -5,8 +5,6 @@ import { getGalleryEntriesFromContentful,GalleryEntry } from '../content';
 import './lot.css';
 export default async function Gallery() {
   const galleryEntries: GalleryEntry[] = await getGalleryEntriesFromContentful();
-  console.log(galleryEntries);
-  galleryEntries.forEach((entry) => {console.log(entry.fields.photo.fields)});
   
   return (
     <main>

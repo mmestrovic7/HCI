@@ -26,6 +26,18 @@ export interface Post {
   };
 }
 export interface GalleryEntry {
+  
+  sys: {
+    id: string;
+  };
+  fields: {
+    photo: Photo;
+    date: string;
+    location: string;
+  };
+}
+export interface GalleryEntryVercel{
+  contentTypeId: string;
   sys: {
     id: string;
   };
@@ -58,7 +70,7 @@ export const getPostsFromContentful = async () => {
   return response.items;
 };
 export const getGalleryEntriesFromContentful = async () => {
-  const response = await client.getEntries<GalleryEntry>({
+  const response = await client.getEntries<GalleryEntryVercel>({
     content_type: "gallery",
   });
 

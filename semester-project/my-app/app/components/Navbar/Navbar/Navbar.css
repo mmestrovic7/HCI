@@ -24,7 +24,8 @@
   
   }
   .nav-logo{
-   margin-bottom: 25px;
+   margin-top: 5px;
+   margin-left: 5px;
   }
   .navbar-elements {
     display: flex;

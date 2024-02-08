@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Navbar.css";
 import Hamburger from "../../Hamburger/Hamburger";
-import Logo from "../Logo/Logo";
+
 
 interface NavbarProps {
   pages: { [key: string]: string };
@@ -33,8 +33,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
   }, []);
 
   return (
-    <nav className="navbar">
-      <Logo handleItemClick={handleItemClick} />
+    <div>
       <div className="showOnPhone">
         <Hamburger
           pages={pages}
@@ -60,7 +59,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
           </Link>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

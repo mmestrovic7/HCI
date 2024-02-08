@@ -5,11 +5,9 @@ import Link from "next/link";
 import { getMobileOperatingSystem, checkIfIOS } from "@/app/os";
 import "../Navbar/Navbar.css"
 
-interface LogoProps {
-  handleItemClick: (name: string) => void;
-}
 
-const Logo: FC<LogoProps> = ({ handleItemClick }) => {
+
+const Logo = () => {
  
   const [mobileOS, setMobileOS] = useState<string>("unknown");
   let logo = "/hslogo2";
@@ -21,8 +19,8 @@ const Logo: FC<LogoProps> = ({ handleItemClick }) => {
   logo = checkIfIOS(mobileOS, logo);
 
   return (
-    <div className="navbar-logo-container">
-      <Link href="/" onClick={() => handleItemClick("home")} className="link">
+    
+      <Link href="/" >
         <Image
           className="nav-logo"
           src={logo}
@@ -31,7 +29,7 @@ const Logo: FC<LogoProps> = ({ handleItemClick }) => {
           alt="Navbar logo"
         />
       </Link>
-    </div>
+
   );
 };
 

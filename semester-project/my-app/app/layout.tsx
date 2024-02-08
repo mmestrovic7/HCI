@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import { FC, useState } from "react";
-import Image from "next/image";
+import {
+  faFacebook,
+  faInstagram,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar/Navbar/NavBar";
-import Hamburger from "./components/Hamburger/Hamburger";
 import Footer from "./components/Footer/Footer";
 const pages = {
   home: "/",

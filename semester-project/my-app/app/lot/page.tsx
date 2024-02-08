@@ -1,6 +1,5 @@
 import '../globals.css'
 import "../about-hs/abouths.css";
-import Footer from '../components/Footer/Footer';
 import Polaroid from '../components/Polaroid/Polaroid';
 import { getGalleryEntriesFromContentful,GalleryEntry } from '../content';
 import './lot.css';

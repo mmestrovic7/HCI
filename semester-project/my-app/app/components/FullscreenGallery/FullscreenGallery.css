@@ -21,27 +21,33 @@
   }
   
   .contentImg img {
-    max-width: 80vw; /* Adjust as needed */
-    max-height: 80vh; /* Adjust as needed */
+    max-width: 90vw; /* Adjust as needed */
+    max-height: 90vh; /* Adjust as needed */
   }
   
   .contentImg p {
     color: #ffffff; /* White text color */
     font-size: 18px; /* Adjust as needed */
-    margin-top: 10px; /* Adjust as needed */
+    margin-top: 10px; 
   }
   
   .button-close {
 
-    color: #ffffff; /* White text color */
+    color: #ffffff; 
     border: none;
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px; 
     cursor: pointer;
     align-self: flex-end;
     padding-right: 10px;
   }
+
   
   .button-close:hover {
     color: grey; 
+  }
+  .galleryArrow{
+    color:white;
+    font-size: 24px;
+    margin:10px;
   }
   

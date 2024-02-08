@@ -1,10 +1,16 @@
+
 .polaroid{
     background-color: #fdf4ea;
     padding: 12px;
     margin-bottom:15px;
     border-radius: 2px;
     box-shadow: 5px 5px 10px var(--darker-background);
+    
 
+}
+.polaroidText{
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 17px;;
 }
 .polaroid:hover{
     transform: scale(1.1);

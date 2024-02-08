@@ -1,7 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./FullscreenGallery.css";
 import { GalleryEntry } from "@/app/content";
+import {
+  faAngleRight,
+  faAngleLeft,
+  faClose,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface FullscreenGalleryProps {
   isOpen: boolean;
@@ -20,19 +26,54 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
   galleryEntries,
   currentEntry,
 }) => {
+  const [prevSlide, setPrevSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [nextSlide, setNextSlide] = useState(0);
+
+  useEffect(() => {
+    const currentIndex = galleryEntries.findIndex(
+      (entry) => entry.fields.photo.fields.file.url === currentEntry.imageSrc
+    );
+
+    setCurrentSlide(currentIndex);
+    setPrevSlide((currentIndex - 1 + galleryEntries.length) % galleryEntries.length);
+    setNextSlide((currentIndex + 1) % galleryEntries.length);
+  }, [isOpen, currentEntry, galleryEntries]);
+
+  const goToNextSlide = () => {
+    setCurrentSlide(nextSlide);
+    setPrevSlide(currentSlide);
+    setNextSlide((nextSlide + 1) % galleryEntries.length);
+  };
+
+  const goToPrevSlide = () => {
+    setCurrentSlide(prevSlide);
+    setPrevSlide((prevSlide - 1 + galleryEntries.length) % galleryEntries.length);
+    setNextSlide(currentSlide);
+  };
+
   return (
-    <div className="overlayGallery">
+    <div className={`overlayGallery ${isOpen ? "open" : ""}`}>
+      <button className="galleryArrowButton" onClick={goToPrevSlide}>
+        <FontAwesomeIcon icon={faAngleLeft} className="galleryArrow" />
+      </button>
       <div className="overlayItems">
         <button onClick={onClose} className="button-close">
-          X
+          <FontAwesomeIcon icon={faClose} />
         </button>
         <div className="contentImg">
-          <img src={currentEntry.imageSrc} alt={currentEntry.location} />
+          <img
+            src={galleryEntries[currentSlide].fields.photo.fields.file.url}
+            alt={currentEntry.location}
+          />
           <p>
             {currentEntry.location}, {currentEntry.date}
           </p>
         </div>
       </div>
+      <button className="galleryArrowButton" onClick={goToNextSlide}>
+        <FontAwesomeIcon icon={faAngleRight} className="galleryArrow" />
+      </button>
     </div>
   );
 };

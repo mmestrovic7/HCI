@@ -26,8 +26,8 @@ const Polaroid: React.FC<PolaroidProps> = ({ location, date, imageSrc, galleryEn
   return (
     <>
       <div className="polaroid" onClick={handleClick}>
-        <img src={imageSrc} height={293} width={293} alt="Polaroid" />
-        <p className={styles.photoText}>
+        <img src={imageSrc} height={320} width={320} alt="Polaroid" />
+        <p className="polaroidText">
           {location}, <br />
           {date}
         </p>

@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="navbar">
+        <nav className="navbar">
           <Logo />
           <Navbar pages={pages} />
-    </div>
+    </nav>
         {children}
         <div className="tilting-image"></div>
         <div className="tilting-image2"></div>

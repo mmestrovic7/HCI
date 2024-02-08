@@ -58,7 +58,8 @@
   
 }
 .socialmedia-container> a{
-  transform: scale(1.3);
+  font-size: 1.3rem;
+ 
 }
 
 .copyright-text {

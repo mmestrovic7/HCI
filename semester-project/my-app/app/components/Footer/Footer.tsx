@@ -1,15 +1,21 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-
 import "./Footer.css";
 
 const Footer: React.FC = () => {
+  const [rerenderTrigger, setRerenderTrigger] = useState<boolean>(false);
+
+  useEffect(() => {
+
+  }, [rerenderTrigger]);
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -43,23 +49,32 @@ const Footer: React.FC = () => {
               <FontAwesomeIcon icon={faEnvelope} />
               design@mail.com
             </li>
-            <li className="socialmedia-container">
-              <a href="https://www.instagram.com/harrystyles/" target="_blank">
+            <div className="socialmedia-container">
+              <a
+                href="https://www.instagram.com/harrystyles/"
+                target="_blank"
+                rel="noopener noreferrer" 
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="https://www.facebook.com/harrystyles/" target="_blank">
+              <a
+                href="https://www.facebook.com/harrystyles/"
+                target="_blank"
+                rel="noopener noreferrer" 
+              >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a href="https://twitter.com/Harry_Styles" target="_blank">
-              <FontAwesomeIcon icon={faXTwitter} />
+              <a
+                href="https://twitter.com/Harry_Styles"
+                target="_blank"
+                rel="noopener noreferrer" 
+              >
+                <FontAwesomeIcon icon={faXTwitter} />
               </a>
-            </li>
+            </div>
           </ul>
         </div>
       </div>
-      <p className="copyright-text">
-        Copyright @ 2023 FESB. All rights reserved.
-      </p>
     </footer>
   );
 };

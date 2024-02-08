@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import CustomButton from '../components/CustomButton/CustomButton';
 import '../about-hs/abouths.css'
 import "./fans.css"

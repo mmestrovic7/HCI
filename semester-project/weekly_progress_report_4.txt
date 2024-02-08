@@ -10,4 +10,6 @@
 *dodano filtriranje postova
 *galerija napravljena
 *carousel napravljen
+*popravjen problem sa fontawesome ikonama
+*sve funkcionalnosti dovršene
 

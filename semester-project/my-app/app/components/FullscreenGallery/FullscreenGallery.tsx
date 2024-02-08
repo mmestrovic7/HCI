@@ -64,10 +64,10 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
         <div className="contentImg">
           <img
             src={galleryEntries[currentSlide].fields.photo.fields.file.url}
-            alt={currentEntry.location}
+            alt={galleryEntries[currentSlide].fields.location}
           />
           <p>
-            {currentEntry.location}, {currentEntry.date}
+            {galleryEntries[currentSlide].fields.location}, {galleryEntries[currentSlide].fields.date}
           </p>
         </div>
       </div>

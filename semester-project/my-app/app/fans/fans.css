@@ -34,7 +34,9 @@
   background-color: var(--darker-background);
   border-radius: 10%;
 }
-
+  .experiences-text>p, .projects-text>p{
+    text-align: center;
+  }
 @media only screen and (max-width: 768px) {
   .subpageElements {
     flex-direction: column;
@@ -50,7 +52,10 @@
   }
   .experiences-text, .projects-text{
     width:90vw;
+    
   }
+
 }
+
 
 

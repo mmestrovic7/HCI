@@ -4,6 +4,7 @@ import "./fans.css"
 function Home() {
   return (
     <main>
+      <div className="fpPage">
       <h1 className='abouths-title'>FAN ACTIVITIES</h1>
         <div className='subpageElements'>
           <ul className = 'experiences-text'>
@@ -20,9 +21,8 @@ function Home() {
             <CustomButton text="PROJECTS" href="/fans/projects" />
           </ul>
           
-          </div>
-        
-      
+          </div> 
+      </div>
         
     </main>
   )

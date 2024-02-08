@@ -51,4 +51,13 @@
     font-size: 24px;
     margin:10px;
   }
-  
+  @media screen and (max-width: 600px){
+    .galleryArrow{
+      font-size: 20px;
+      margin:5px
+    }
+    .contentImg img {
+        max-width: 85vw; /* Adjust as needed */
+        max-height: 85vh; /* Adjust as needed */
+      }
+  }

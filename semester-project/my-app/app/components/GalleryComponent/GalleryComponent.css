@@ -1,7 +1,8 @@
 .gallery{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap:10px;
     margin:0px;
 }
 

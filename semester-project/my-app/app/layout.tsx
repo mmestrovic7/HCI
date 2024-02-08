@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import {
-  faFacebook,
-  faInstagram,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar/Navbar/NavBar";
 import Footer from "./components/Footer/Footer";
 const pages = {

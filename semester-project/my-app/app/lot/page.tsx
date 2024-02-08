@@ -1,4 +1,10 @@
 import '../globals.css'
+import {
+  faFacebook,
+  faInstagram,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../about-hs/abouths.css";
 import Polaroid from '../components/Polaroid/Polaroid';
 import { getGalleryEntriesFromContentful,GalleryEntry } from '../content';

@@ -7,7 +7,6 @@ import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar/NavBar";
 import Hamburger from "./components/Hamburger/Hamburger";
 import Footer from "./components/Footer/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const pages = {
   home: "/",
   fans: "/fans",

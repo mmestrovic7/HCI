@@ -30,3 +30,13 @@
     transform: scale(1.2);
   }
 }
+@media screen and (max-width: 768px) {
+  .slideButton {
+    transform: scale(2);
+
+  }
+  .slideButton.left, .slideButton.right {
+    margin: 0px -20px;
+  }
+    
+}

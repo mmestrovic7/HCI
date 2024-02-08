@@ -119,6 +119,7 @@ p{
 }
 .finalHeroSection {
   display: grid;
+  
 } 
 
 /*second section*/
@@ -209,12 +210,13 @@ p{
   }
 
   .h1homePage{
-    padding-top: 5px;
+    padding: 57px 0px 0px 0px;
+    
   }
   .homePageFullText {
-    width: 100%;
-    padding: 20px;
-    margin-right: 0;
+    width: 90vw;
+    margin:0px;
+    padding:0px;
     position: relative;
   }
 
@@ -229,7 +231,10 @@ p{
   }
   .finalHeroSection{
     position:relative;
-    margin-top: 70px;
+    margin:0px;
+    width:95vw;
+    padding: 0px;
+    
   }
   .finalHeroSection2 {
     z-index: 1;
@@ -257,7 +262,7 @@ p{
   flex-direction: column;
  }
  .fanExperiencesText{
-  width:80%;
+  width:90%;
  }
  .fanExperiencePhoto{
   display:none;

@@ -4,6 +4,8 @@ import { GalleryEntry } from "@/app/content";
 import CarouselItem from "@/app/components/CarouselItem/CarouselItem"; // Import the CarouselItem component
 import "./Carousel.css";
 import"@/app/globals.css";
+import {faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface CarouselProps {
   galleryEntries: GalleryEntry[];
@@ -35,7 +37,9 @@ const Carousel: React.FC<CarouselProps> = ({ galleryEntries }) => {
 
   return (
     <div className="carousel-container">
-      <button onClick={goToPrevSlide}>Previous</button>
+      <button onClick={goToPrevSlide} className="slideButton left">
+        <FontAwesomeIcon icon={faAngleLeft} className="arrow"/>
+      </button>
 
       {/* Render three CarouselItem components */}
 
@@ -59,7 +63,9 @@ const Carousel: React.FC<CarouselProps> = ({ galleryEntries }) => {
         />
       </div>
 
-      <button onClick={goToNextSlide}>Next</button>
+      <button className="slideButton right" onClick={goToNextSlide}>
+        <FontAwesomeIcon icon={faAngleRight} className="arrow"/>
+      </button>
     </div>
   );
 };

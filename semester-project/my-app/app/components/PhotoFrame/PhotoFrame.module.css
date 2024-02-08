@@ -2,6 +2,7 @@
     background-color: var(--photo-text-background);
     border-radius: 10px;
     width: auto;
+    margin:0px 10px 0px 10px;
   }
   .photoText{
     font-family: "Dela Gothic One", sans-serif;

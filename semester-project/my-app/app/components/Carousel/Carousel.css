@@ -1,13 +1,32 @@
 /* Carousel.css */
 .carousel {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .carousel-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.carousel-items{
-    display: flex;
+.carousel-items {
+  display: flex;
 }
-
+.slideButton {
+  margin-top: 50px;
+  background-color: rgb(var(--background-rgb));
+  transform: scale(3);
+  padding: 0px 7px 0px 7px;
+  border-radius: 100%;
+}
+.slideButton.left {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.slideButton.right {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.slideButton:hover {
+  .arrow {
+    transform: scale(1.2);
+  }
+}

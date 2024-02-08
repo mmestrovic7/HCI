@@ -1,5 +1,12 @@
-import Image from "next/image";
+import {
+  faFacebook,
+  faInstagram,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+
 import "./Footer.css";
 
 const Footer: React.FC = () => {
@@ -29,47 +36,22 @@ const Footer: React.FC = () => {
             <li>Ruđera Boškovića 32</li>
             <li>21000, Split, Croatia</li>
             <li>
-              <img
-                src="/phone_vector.svg"
-                alt="imagePhone"
-                width={15}
-                height={15}
-              />
+              <FontAwesomeIcon icon={faPhone} />
               +385 123 0000
             </li>
             <li>
-              <img
-                src="/mail_vector.svg"
-                alt="imageMail"
-                width={15}
-                height={15}
-              />
+              <FontAwesomeIcon icon={faEnvelope} />
               design@mail.com
             </li>
             <li className="socialmedia-container">
               <a href="https://www.instagram.com/harrystyles/" target="_blank">
-                <img
-                  src="/insta_vector.svg"
-                  alt="imageInsta"
-                  width={15}
-                  height={15}
-                />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a href="https://www.facebook.com/harrystyles/" target="_blank">
-                <img
-                  src="/facebook_vector.svg"
-                  alt="imageFacebook"
-                  width={8}
-                  height={8}
-                />
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a href="https://twitter.com/Harry_Styles" target="_blank">
-                <img
-                  src="/twitter_vector.svg"
-                  alt="imageTwitter"
-                  width={17}
-                  height={17}
-                />
+              <FontAwesomeIcon icon={faXTwitter} />
               </a>
             </li>
           </ul>

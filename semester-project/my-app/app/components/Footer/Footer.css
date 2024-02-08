@@ -55,6 +55,10 @@
   gap: 5px;
   height: min-content;
   padding-top: 20px;
+  
+}
+.socialmedia-container> a{
+  transform: scale(1.3);
 }
 
 .copyright-text {

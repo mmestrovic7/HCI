@@ -1,5 +1,6 @@
 "use client";
-import React, { FC, useState, useEffect } from "react";
+
+import React, { FC, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,12 +35,12 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
     setMobileOS(getMobileOperatingSystem());
   }, []);
 
+  const handleItemClick = useCallback((name: string) => {
+    setSelectedNavItem(name);
+  }, []);
+
   logo = checkIfIOS(mobileOS, logo);
   console.log(logo);
-
-  const handleItemClick = (name: string) => {
-    setSelectedNavItem(name);
-  };
 
   return (
     <nav className="navbar">
@@ -54,7 +55,7 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
       </Link>
 
       <div className="showOnPhone">
-        <Hamburger pages={pages} />
+        <Hamburger pages={pages} activeItem={selectedNavItem} handleItemClick={handleItemClick} />
       </div>
 
       <ul className="navbar-elements hideOnPhone">

@@ -1,6 +1,7 @@
 import '../globals.css'
 import "../about-hs/abouths.css";
 import PhotoFrame from '../components/PhotoFrame/PhotoFrame';
+import Polaroid from '../components/Polaroid/Polaroid';
 import { getGalleryEntriesFromContentful,GalleryEntry } from '../content';
 import './lot.css';
 export default async function Gallery() {
@@ -12,7 +13,7 @@ export default async function Gallery() {
       <div className='gallery'>
         {galleryEntries.map((entry) => {
           return (
-            <PhotoFrame location={entry.fields.location} date={entry.fields.date} imageSrc={entry.fields.photo.fields.file.url} key={entry.sys.id}/>
+            <Polaroid location={entry.fields.location} date={entry.fields.date} imageSrc={entry.fields.photo.fields.file.url} key={entry.sys.id}/>
           );
         }
         )}

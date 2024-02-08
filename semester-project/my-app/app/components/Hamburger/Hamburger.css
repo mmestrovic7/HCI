@@ -46,7 +46,9 @@
   .additional-content a:hover {
     background-color: #eee;
   }
-
+  .hamburger-item.active{
+    background-color: var(--darker-background);
+  }
 @media only screen and (max-width: 1000px){
   .bar{
     scale: 0.8;

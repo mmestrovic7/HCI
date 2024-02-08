@@ -3,7 +3,10 @@
     padding: 12px;
     margin-bottom:15px;
     border-radius: 2px;
-    box-shadow: 4px 4px 0px 0px var(--darker-background);
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px var(--darker-background);
 
+}
+.polaroid:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }

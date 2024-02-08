@@ -1,0 +1,47 @@
+.overlayGallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .overlayItems{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contentImg{
+    text-align: center;
+  }
+  
+  .contentImg img {
+    max-width: 80vw; /* Adjust as needed */
+    max-height: 80vh; /* Adjust as needed */
+  }
+  
+  .contentImg p {
+    color: #ffffff; /* White text color */
+    font-size: 18px; /* Adjust as needed */
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .button-close {
+
+    color: #ffffff; /* White text color */
+    border: none;
+    font-size: 24px; /* Adjust as needed */
+    cursor: pointer;
+    align-self: flex-end;
+    padding-right: 10px;
+  }
+  
+  .button-close:hover {
+    color: grey; 
+  }
+  

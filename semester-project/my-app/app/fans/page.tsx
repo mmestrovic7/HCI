@@ -6,7 +6,7 @@ function Home() {
     <main>
       <div className="fpPage">
       <h1 className='abouths-title'>FAN ACTIVITIES</h1>
-        <div className='subpageElements'>
+        <div className='fpSubpageElements'>
           <ul className = 'experiences-text'>
             <p>Read fan stories! Click 'Experiences' to explore Love on Tour through fans' eyes. 🌟
             Dive into shared experiences and enjoy the journey with us. 🌈</p>

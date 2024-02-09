@@ -99,14 +99,6 @@ p{
 .showOnPhone{
   display: none;
 }
-/*content of about lot and fans*/
-.subpageElements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  padding-right: 20px;
-}
 
 /*first section*/
 .homePageFullText {

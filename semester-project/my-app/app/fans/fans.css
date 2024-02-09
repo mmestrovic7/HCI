@@ -9,33 +9,45 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding-bottom: 0;
   gap: 50px;
   margin-top: 10px;
   width:95vw;
   
   /* align-items: center; */
 }
+.couch{
+  align-self: center;
+  opacity:0.12;
+  margin-top: 10px;
+  margin-bottom: -70px;
+}
+.lamp{
+  align-self: center;
+  opacity:0.2;
+  margin-bottom: -40px;
+
+}
 .experiences-text,
 .projects-text {
   /* border-color: red;
     border-width: 3px; */
-  width: 30rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px; /*u custom button je margin bottom 60px ,
+  padding-top: 60px; /*u custom button je margin bottom 60px ,
                         pa poremeti sve pa sam ovako rucno*/
   margin: 0;
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   gap: 40px;
   font-weight: 500;
   background-color: var(--darker-background);
   border-radius: 10%;
 }
-  .experiences-text>p, .projects-text>p{
+ .experiences-text>p, .projects-text>p{
     text-align: center;
   }
 @media only screen and (max-width: 768px) {
@@ -45,6 +57,15 @@
   .experiences-text, .projects-text{
     width:70vw;
   }
+  .lamp{
+    margin-top: 0;
+    margin-bottom: -40px;
+  }
+  .couch{
+    margin-top:21px;
+    margin-bottom:-70px;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -56,7 +77,5 @@
     
   }
 
+
 }
-
-
-

@@ -6,6 +6,9 @@
   padding-top: 0;
   text-align: center;
 }
+.abouths-title.fanPageT{
+  margin-top: 0px;
+}
 
 .abouths-subtitle {
   font-size: 19px;
@@ -87,5 +90,8 @@
   .landing1D-text {
     scale: 0.9;
     margin-top: -30px;
+  }
+  .abouths-title.fanPageT{
+    margin-top: 70px;
   }
 }

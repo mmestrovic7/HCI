@@ -1,6 +1,7 @@
 
 .polaroid{
     background-color: #fdf4ea;
+/*background-color: var(--post-background);*/
     padding: 12px;
     margin-bottom:15px;
     border-radius: 2px;

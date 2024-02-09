@@ -4,7 +4,7 @@
     padding: 12px;
     margin-bottom:15px;
     border-radius: 2px;
-    box-shadow: 5px 5px 10px var(--darker-background);
+    box-shadow: 5px 5px 10px rgb(45, 44, 44,0.3);
     
 
 }

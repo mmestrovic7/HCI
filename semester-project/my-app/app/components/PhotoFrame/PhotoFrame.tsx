@@ -22,7 +22,9 @@ const PhotoFrame: React.FC<PhotoFrameProps> = ({
         {location}, <br />
         {date}
       </p>
-      <img  src={imageSrc}  height={293} width={293}/>
+      <div className={styles.pfImg}>
+      <img  src={imageSrc} />
+      </div>
     </div>
   );
 };

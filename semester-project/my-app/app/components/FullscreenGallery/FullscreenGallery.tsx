@@ -8,6 +8,7 @@ import {
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../PhotoFrame/PhotoFrame.module.css";
 
 interface FullscreenGalleryProps {
   isOpen: boolean;
@@ -62,10 +63,12 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
           <FontAwesomeIcon icon={faClose} />
         </button>
         <div className="contentImg">
+        <div className="photoFull">
           <img
             src={galleryEntries[currentSlide].fields.photo.fields.file.url}
             alt={galleryEntries[currentSlide].fields.location}
           />
+          </div>
           <p>
             {galleryEntries[currentSlide].fields.location}, {galleryEntries[currentSlide].fields.date}
           </p>

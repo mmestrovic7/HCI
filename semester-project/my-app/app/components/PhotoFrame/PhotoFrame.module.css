@@ -1,13 +1,24 @@
 .photoFrame {
-    background-color: var(--photo-text-background);
-    border-radius: 10px;
-    width: auto;
-    margin:0px 10px 0px 10px;
-  }
-  .photoText{
-    font-family: "Dela Gothic One", sans-serif;
-    text-align: center;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 20px 0px 20px 0px;
-  }
+  background-color: var(--photo-text-background);
+  border-radius: 10px;
+  width: auto;
+  margin: 0px 10px 0px 10px;
+}
+.photoText {
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 20px 0px 20px 0px;
+}
+.pfImg {
+  overflow: hidden;
+  width: 293px; /* Desired width */
+  height: 293px;
+}
+.pfImg img {
+  width: 100%; /* Take up full width of container */
+  height: 100%; /* Take up full height of container */
+  object-fit: cover;
+}
+

@@ -1,6 +1,6 @@
-.fpPage{
-  display:flex;
-  flex-direction:column;
+.fpPage {
+  display: flex;
+  flex-direction: column;
 }
 .fpSubpageElements {
   /* border-color: red;
@@ -10,23 +10,24 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 0;
-  gap: 50px;
-  margin-top: 10px;
-  width:95vw;
-  
+  gap: 0px;
+  margin-top: 0px;
+  width: 95vw;
+
   /* align-items: center; */
 }
-.couch{
+.couch {
   align-self: center;
-  opacity:0.12;
+  opacity: 0.12;
   margin-top: 10px;
   margin-bottom: -70px;
+  scale: 1.1;
 }
-.lamp{
+.lamp {
   align-self: center;
-  opacity:0.2;
+  opacity: 0.2;
   margin-bottom: -40px;
-
+  scale: 0.8;
 }
 .experiences-text,
 .projects-text {
@@ -36,46 +37,70 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px; /*u custom button je margin bottom 60px ,
-                        pa poremeti sve pa sam ovako rucno*/
   margin: 0;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 0px;
-  gap: 40px;
+  padding: 60px 30px 0px 30px; /*u custom button je margin bottom 60px ,
+                        pa poremeti sve pa sam ovako rucno*/
+  gap: 0px;
   font-weight: 500;
-  background-color: var(--darker-background);
-  border-radius: 10%;
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
- .experiences-text>p, .projects-text>p{
-    text-align: center;
-  }
+.experiences-text:hover, 
+.projects-text:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+/* .experiences-text > p,
+.projects-text > p {
+  text-align: center;
+  font-size: 19px;
+  padding: 0px 55px 10px 55px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  text-align: center;
+} */
+
+.button {
+  padding: 0px 60px 10px 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.text {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  padding: 0px 65px 10px 65px;
+  /* margin-top: -10px; */
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .fpSubpageElements {
     flex-direction: column;
   }
-  .experiences-text, .projects-text{
-    width:70vw;
+  .experiences-text,
+  .projects-text {
+    width: 70vw;
   }
-  .lamp{
+  .lamp {
     margin-top: 0;
     margin-bottom: -40px;
   }
-  .couch{
-    margin-top:21px;
-    margin-bottom:-70px;
+  .couch {
+    margin-top: 21px;
+    margin-bottom: -70px;
   }
-
 }
 
 @media only screen and (max-width: 500px) {
   .fpSubpageElements {
     flex-direction: column;
   }
-  .experiences-text, .projects-text{
-    width:90vw;
-    
+  .experiences-text,
+  .projects-text {
+    width: 90vw;
   }
-
-
 }

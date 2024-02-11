@@ -96,6 +96,21 @@ p{
 
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* Initial width */
+  transition: width 0.3s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #065E01 ;/* Change this to the color you want for the thumb */
+border-radius: 5px;
+ 
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5AAD55; /* Width when hovering */
+  width: 10px;
+}
+
 .showOnPhone{
   display: none;
 }

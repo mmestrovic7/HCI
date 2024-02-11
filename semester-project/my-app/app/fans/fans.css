@@ -13,21 +13,22 @@
   gap: 0px;
   margin-top: 0px;
   width: 95vw;
-
+margin-bottom: -30px;
   /* align-items: center; */
 }
 .couch {
   align-self: center;
-  opacity: 0.12;
+  opacity: 0.5;
   margin-top: 10px;
   margin-bottom: -70px;
-  scale: 1.1;
+  
 }
 .lamp {
   align-self: center;
-  opacity: 0.2;
-  margin-bottom: -40px;
+  opacity: 0.6;
+  margin-bottom: -47px;
   scale: 0.8;
+  z-index:-1;
 }
 .experiences-text,
 .projects-text {
@@ -46,12 +47,9 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transform: scale(0.95);
 }
-.experiences-text:hover, 
-.projects-text:hover{
-  transform: scale(1.1);
-  transition: 0.2s;
-}
+
 /* .experiences-text > p,
 .projects-text > p {
   text-align: center;
@@ -86,8 +84,9 @@
     width: 70vw;
   }
   .lamp {
-    margin-top: 0;
-    margin-bottom: -40px;
+    margin-top: 40px;
+    margin-left:25px;
+
   }
   .couch {
     margin-top: 21px;

@@ -6,7 +6,7 @@ function Home() {
   return (
     <main>    
       <div className="fpPage">
-        <Image src="/couch.png" alt="couch" width={450} height={450} className='couch'/>
+        <Image src="/newCouch2.png" alt="couch" width={530} height={450} className='couch'/>
       <h1 className='abouths-title'>WELCOME TO HARRY'S HOUSE!</h1>
         <div className='fpSubpageElements'>
           <ul className = 'experiences-text' style={{ backgroundImage: `url(photoFrame.png)` }}>
@@ -24,7 +24,7 @@ function Home() {
           </ul>
           
           </div>
-           <Image src="/image 42.png" alt="lamp" width={300} height={100} className='lamp'/>
+           <Image src="/lampa2.png" alt="lamp" width={530} height={100} className='lamp'/>
       </div> 
     </main>
   )

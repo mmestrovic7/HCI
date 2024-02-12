@@ -13,7 +13,7 @@
   gap: 0px;
   margin-top: 0px;
   width: 95vw;
-margin-bottom: -30px;
+  margin-bottom: -30px;
   /* align-items: center; */
 }
 .couch {
@@ -26,7 +26,8 @@ margin-bottom: -30px;
 .lamp {
   align-self: center;
   opacity: 0.6;
-  margin-bottom: -47px;
+  margin-top: 60px;
+  margin-bottom: -54px;
   scale: 0.8;
   z-index:-1;
 }
@@ -39,26 +40,34 @@ margin-bottom: -30px;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 60px 30px 0px 30px; /*u custom button je margin bottom 60px ,
+  padding: 60px 30px 0px 30px;/*u custom button je margin bottom 60px ,
                         pa poremeti sve pa sam ovako rucno*/
   gap: 0px;
-  font-weight: 500;
+  font-weight: 400;
+  margin-left: -50px;
+  margin-right: -50px;
   background-size: cover;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  transform: scale(0.95);
+  scale: 1.1;
+}
+.experiences-text{
+  padding: 80px 30px 0px 30px;
+  gap: 10px;
 }
 
-/* .experiences-text > p,
+.experiences-text > p,
 .projects-text > p {
-  text-align: center;
+  /* text-align: center;
   font-size: 19px;
   padding: 0px 55px 10px 55px;
   margin-top: -10px;
   margin-bottom: 40px;
-  text-align: center;
-} */
+  text-align: center; */
+  font-size: 19px;
+  scale: 0.8;
+}
 
 .button {
   padding: 0px 60px 10px 60px;
@@ -78,6 +87,9 @@ margin-bottom: -30px;
 @media only screen and (max-width: 768px) {
   .fpSubpageElements {
     flex-direction: column;
+    gap: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .experiences-text > p,
   .projects-text > p {

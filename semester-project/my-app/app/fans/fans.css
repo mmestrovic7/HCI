@@ -79,10 +79,14 @@ margin-bottom: -30px;
   .fpSubpageElements {
     flex-direction: column;
   }
-  .experiences-text,
-  .projects-text {
+  .experiences-text > p,
+  .projects-text > p {
     width: 70vw;
+    margin-left: 35px;
+    margin-right: 35px;
+
   }
+
   .lamp {
     margin-top: 40px;
     margin-left:25px;
@@ -102,4 +106,6 @@ margin-bottom: -30px;
   .projects-text {
     width: 90vw;
   }
+
+
 }

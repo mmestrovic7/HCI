@@ -158,6 +158,7 @@ border-radius: 5px;
 .heroSection {
   display: inline-flex;
   margin-bottom: 45px;
+  margin-top: -5x;
 }
 .finalHeroSection {
   display: grid;
@@ -174,6 +175,7 @@ border-radius: 5px;
   align-items: center;
   width:110%;
   height: 800px;
+ gap: 20px;
 }
 .heroSection2Photos{
   display: flex;
@@ -253,7 +255,7 @@ border-radius: 5px;
 
   .h1homePage{
     padding-top: 57px;
-    margin-top: 30px;
+    margin-top: -10px;
   }
   .homePageFullText {
     width: 100vw;

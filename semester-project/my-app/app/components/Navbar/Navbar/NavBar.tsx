@@ -44,20 +44,23 @@ const Navbar: FC<NavbarProps> = ({ pages }) => {
 
       <ul className="navbar-elements hideOnPhone">
         {Object.entries(pages).map(([name, path]) => (
+           <Link href={path} onClick={() => handleItemClick(name)}>
           <li key={name} className={selectedNavItem === name ? "active" : ""}>
-            <Link href={path} onClick={() => handleItemClick(name)}>
+           
               {name.toUpperCase()}
-            </Link>
+          
           </li>
+          </Link>
         ))}
+        <Link href="/about-hs" onClick={() => handleItemClick("about-hs")}>
         <li
           key="about-hs"
           className={selectedNavItem === "about-hs" ? "active" : ""}
         >
-          <Link href="/about-hs" onClick={() => handleItemClick("about-hs")}>
+          
             ABOUT HS
-          </Link>
-        </li>
+         
+        </li> </Link>
       </ul>
     </div>
   );

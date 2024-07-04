@@ -13,27 +13,25 @@ interface ExperiencesProps {
 
 const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
   const [activeButton, setActiveButton] = useState<string | null>(null);
-  const [posts, setPosts] = useState<Post[]>(initialPosts); // Store posts in state
+  const [posts, setPosts] = useState<Post[]>(initialPosts);
+  const [allPosts, setAllPosts] = useState<Post[]>(initialPosts); // Store initial posts in state
 
   const filterPostsByYear = (year: number) => {
-    const filteredPosts = initialPosts.filter(
+    const filteredPosts = allPosts.filter(
       (post) => new Date(post.fields.date).getFullYear() === year
     );
     setPosts(filteredPosts);
   };
 
   const handleFilterButtonClick = (color: string, number: string) => {
-    // If the button is already active, reset the posts to initialPosts
     if (activeButton === color) {
-      setPosts(initialPosts);
+      setPosts(allPosts);
       setActiveButton(null);
       return;
     }
 
-    // Update the state when a filter button is clicked
     setActiveButton(color);
 
-    // Filter posts based on the year
     switch (number) {
       case "1":
         console.log("Red Filter Button Clicked - Posts from 2021");
@@ -49,8 +47,21 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
         break;
       default:
         console.log("Unknown Filter Button Clicked");
-        setPosts(initialPosts); // Reset to original posts
+        setPosts(allPosts);
     }
+  };
+
+  const handleDeletePost = (postId: string) => {
+    const updatedPosts = posts.filter((post) => post.sys.id !== postId);
+    const updatedAllPosts = allPosts.filter((post) => post.sys.id !== postId);
+    setPosts(updatedPosts);
+    setAllPosts(updatedAllPosts);
+  };
+
+  const handleDeleteClick = (e: React.MouseEvent, postId: string) => {
+    e.stopPropagation();
+    e.preventDefault();
+    handleDeletePost(postId);
   };
 
   return (
@@ -78,15 +89,20 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
       <ul className="posts">
         {posts.map((post) => (
           <li key={post.sys.id}>
-            <Link href={`experiences/${post.sys.id}`}>
-              <PostClosed
-                title={post.fields.title}
-                rating={post.fields.rating}
-                location={post.fields.location}
-                date={post.fields.date}
-                open={false}
-              />
-            </Link>
+            <div className="post-content">
+              <Link href={`experiences/${post.sys.id}`} legacyBehavior>
+                <a>
+                  <PostClosed
+                    title={post.fields.title}
+                    rating={post.fields.rating}
+                    location={post.fields.location}
+                    date={post.fields.date}
+                    open={false}
+                  />
+                </a>
+              </Link>
+              <button onClick={(e) => handleDeleteClick(e, post.sys.id)}>Delete</button>
+            </div>
           </li>
         ))}
       </ul>

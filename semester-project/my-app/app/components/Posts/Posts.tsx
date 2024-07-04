@@ -11,7 +11,7 @@ interface ExperiencesProps {
   posts: Post[];
 }
 
-const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
+const Posts: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
   const [activeButton, setActiveButton] = useState<string | null>(null);
   const [posts, setPosts] = useState<Post[]>(initialPosts);
   const [allPosts, setAllPosts] = useState<Post[]>(initialPosts); // Store initial posts in state
@@ -58,11 +58,6 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
     setAllPosts(updatedAllPosts);
   };
 
-  const handleDeleteClick = (e: React.MouseEvent, postId: string) => {
-    e.stopPropagation();
-    e.preventDefault();
-    handleDeletePost(postId);
-  };
 
   return (
     <div>
@@ -101,7 +96,7 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
                   />
                 </a>
               </Link>
-              <button onClick={(e) => handleDeleteClick(e, post.sys.id)}>Delete</button>
+              <button onClick={(e) => handleDeletePost(post.sys.id)}>Delete</button>
             </div>
           </li>
         ))}
@@ -110,4 +105,4 @@ const Experiences: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
   );
 };
 
-export default Experiences;
+export default Posts;

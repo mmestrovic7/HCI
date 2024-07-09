@@ -51,12 +51,6 @@ const Posts: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
     }
   };
 
-  const handleDeletePost = (postId: string) => {
-    const updatedPosts = posts.filter((post) => post.sys.id !== postId);
-    const updatedAllPosts = allPosts.filter((post) => post.sys.id !== postId);
-    setPosts(updatedPosts);
-    setAllPosts(updatedAllPosts);
-  };
 
 
   return (
@@ -85,8 +79,7 @@ const Posts: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
         {posts.map((post) => (
           <li key={post.sys.id}>
             <div className="post-content">
-              <Link href={`experiences/${post.sys.id}`} legacyBehavior>
-                <a>
+              <Link href={`experiences/${post.sys.id}`}>
                   <PostClosed
                     title={post.fields.title}
                     rating={post.fields.rating}
@@ -94,9 +87,7 @@ const Posts: React.FC<ExperiencesProps> = ({ posts: initialPosts }) => {
                     date={post.fields.date}
                     open={false}
                   />
-                </a>
               </Link>
-              <button onClick={(e) => handleDeletePost(post.sys.id)}>Delete</button>
             </div>
           </li>
         ))}
